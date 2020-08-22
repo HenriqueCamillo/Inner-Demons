@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
 
     private bool isUsingPower;
     private bool isInvincible;
+    private bool isTransforming;
 
     public bool IsInBodyArea
     {
@@ -37,11 +38,15 @@ public class Player : MonoBehaviour
         private set 
         {
             isInBodyArea = value;
-            sRenderer.flipX = value;
+            sRenderer.flipX = true;
             animator.SetBool("InBodyArea", value);
 
             currrentArea = isInBodyArea ? Power.Type.Body : Power.Type.Mind;
             reflector.SetupColliders();
+
+            isTransforming = true;
+            animator.SetTrigger("Transform");
+            CancelInvoke(nameof(Shoot));
         }
     }
 
@@ -51,7 +56,6 @@ public class Player : MonoBehaviour
         private set 
         {
             isReflecting = value;
-            reflector.gameObject.SetActive(value);
             animator.SetBool("Reflecting", value);
         }
     }
@@ -72,7 +76,7 @@ public class Player : MonoBehaviour
         sRenderer   = GetComponent<SpriteRenderer>();
         animator    = GetComponent<Animator>();
 
-        InvokeRepeating(nameof(Shoot), shootCooldown, shootCooldown);
+        InvokeRepeating(nameof(Shoot), 0f, shootCooldown);
     }
 
     void Update()
@@ -86,7 +90,7 @@ public class Player : MonoBehaviour
             IsInBodyArea = false;
 
         // TODO add controller support
-        if (Input.GetKeyDown(KeyCode.Z) && !IsReflecting && !IsUsingPower)
+        if (Input.GetKeyDown(KeyCode.Z) && !IsReflecting && !IsUsingPower && !isTransforming)
         {
             if (!IsInBodyArea && PowerGaugeManager.instance.mindPowerReady)
             {
@@ -105,17 +109,15 @@ public class Player : MonoBehaviour
         }
 
         // TODO add controller support
-        if (Input.GetKeyDown(KeyCode.X) && !IsReflecting && !IsUsingPower)
+        if (Input.GetKeyDown(KeyCode.X) && !IsReflecting && !IsUsingPower && !isTransforming)
         {
             IsReflecting = true;
-            // TODO animation event
-            Invoke(nameof(OnReflectionEnd), .5f);
         }
     }
 
     void FixedUpdate()
     {
-        if (!IsReflecting && !IsUsingPower)
+        if (!IsReflecting && !IsUsingPower && !isTransforming)
             rBody.MovePosition(this.transform.position + (Vector3)movement * speed * Time.fixedDeltaTime);
     }
 
@@ -151,13 +153,26 @@ public class Player : MonoBehaviour
         IsUsingPower = false;
     }
 
+    public void OnReflectionStart()
+    {
+        reflector.gameObject.SetActive(true);
+    }
+
     public void OnReflectionEnd()
     {
         IsReflecting = false;
+        reflector.gameObject.SetActive(false);
     }
 
     public void OnDamageEnd()
     {
         isInvincible = false;
+    }
+
+    public void OnTransformEnd()
+    {
+        isTransforming = false;
+        InvokeRepeating(nameof(Shoot), 0f, shootCooldown);
+        sRenderer.flipX = IsInBodyArea;
     }
 }
