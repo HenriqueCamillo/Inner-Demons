@@ -23,6 +23,9 @@ public class Boss : MonoBehaviour
             currentFill = Mathf.Clamp(value, 0, maxFill);
             CancelInvoke(nameof(SmoothGrow));
             InvokeRepeating(nameof(SmoothGrow), 0f, fillChangeRate);
+
+            if (currentFill == maxFill)
+                GameManager.instance.GameOver();
         }
     }
 

@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     private bool isReflecting;
 
     private bool isUsingPower;
+    private bool isInvincible;
 
     public bool IsInBodyArea
     {
@@ -128,18 +129,21 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Boss"))
         {
-            Debug.Log("Murreu");
+            GameManager.instance.GameOver();
         }
     }
 
     public void TakeDamage()
     {
-        Debug.Log("Damage");
-        IsReflecting = false;
-        IsUsingPower = false;
-        BossesManager.instance.GetBoss(currrentArea).HitGrow();
+        if (!isInvincible)
+        {
+            IsReflecting = false;
+            IsUsingPower = false;
+            isInvincible = true;
 
-        // TODO invincibility
+            animator.SetTrigger("Damage");
+            BossesManager.instance.GetBoss(currrentArea).HitGrow();
+        }
     }
 
     public void OnPowerEnd()
@@ -150,5 +154,10 @@ public class Player : MonoBehaviour
     public void OnReflectionEnd()
     {
         IsReflecting = false;
+    }
+
+    public void OnDamageEnd()
+    {
+        isInvincible = false;
     }
 }
