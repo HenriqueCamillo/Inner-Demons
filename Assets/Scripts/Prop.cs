@@ -9,12 +9,6 @@ public class Prop : MonoBehaviour
     private Throwable.Type throwableType = Throwable.Type.Projectile;
     private bool reflected = false;
 
-    void Start()
-    {
-        if (rBody == null)
-            rBody = GetComponent<Rigidbody2D>();
-    }
-
     void OnEnable()
     {
         if (powerType == Power.Type.Mind)
@@ -36,7 +30,7 @@ public class Prop : MonoBehaviour
         reflected = true;
 
         // TODO extra change direction rule
-        Vector2 direction = powerType == Power.Type.Mind ? Vector2.left : Vector2.right;
+        Vector2 direction = powerType == Power.Type.Mind ? Vector2.right : Vector2.left;
         rBody.velocity = direction * force;
     }
 
@@ -47,7 +41,6 @@ public class Prop : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.tag);
         if (reflected && other.CompareTag("Boss"))
         {
             PowerGaugeManager.instance.AddGaugeBonus(powerType, throwableType);

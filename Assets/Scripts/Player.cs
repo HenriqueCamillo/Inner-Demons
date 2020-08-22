@@ -134,6 +134,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage()
     {
+        Debug.Log("Damage");
         IsReflecting = false;
         IsUsingPower = false;
         BossesManager.instance.GetBoss(currrentArea).HitGrow();
