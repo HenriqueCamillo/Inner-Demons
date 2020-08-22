@@ -46,13 +46,13 @@ public class MindBoss : MonoBehaviour
 
     public void LeftStomp()
     {
-        Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
+        Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, this.transform).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
         StompCounter++;
     }
 
     public void RightStomp()
     {
-        Instantiate(groundStompPrefab, rightHandSpawnOrigin.position, Quaternion.identity).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
+        Instantiate(groundStompPrefab, rightHandSpawnOrigin.position, Quaternion.identity, this.transform).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
         StompCounter++;
     }
 
@@ -101,7 +101,7 @@ public class MindBoss : MonoBehaviour
         Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.x));
         GameObject propPrefab = propPrefabs[Random.Range(0, propPrefabs.Length)];
 
-        GameObject spawnedProp = Instantiate(propPrefab, spawnPos, Quaternion.identity);
+        GameObject spawnedProp = Instantiate(propPrefab, spawnPos, Quaternion.identity, this.transform);
         Rigidbody2D propRigid = spawnedProp.GetComponent<Rigidbody2D>();
 
         if(Random.Range(0f, 1f) <= parryableRate)
@@ -116,7 +116,7 @@ public class MindBoss : MonoBehaviour
             spawnedProp.layer = LayerMask.NameToLayer("Prop");
             spawnedProp.tag = "Prop";
         }
-        
+
         propRigid.velocity = propVelocity;
         propRigid.angularVelocity = propAngularVelocity;
 
