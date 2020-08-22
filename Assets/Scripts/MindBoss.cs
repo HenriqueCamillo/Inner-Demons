@@ -7,7 +7,8 @@ public class MindBoss : MonoBehaviour
     [Header("General")]
     [SerializeField] float minWaitBetweenAttacks;
     [SerializeField] float maxWaitBetweenAttacks;
-    enum Attack { GroundStomp, ProjectileRain, ParryableProjectile, TelegraphedHits }
+    [SerializeField] Transform maskParent;
+    enum Attack { GroundStomp, PropWaves, TentacleFrenzy, TelegraphedHits }
     Attack[] attacks;
 
     [Header("Ground Stomp")]
@@ -28,9 +29,9 @@ public class MindBoss : MonoBehaviour
     }
 
     [Header("Telegraphed Areas")]
-    [SerializeField] GameObject[] propPrefabs;
-    [SerializeField] float propSpawnInterval = 1f, parryableRate = 0.1f;
-    [SerializeField] Vector2 propVelocity;
+    [SerializeField] GameObject projectilePrefab;
+    [SerializeField] Vector2 projectileVelocity;
+    [SerializeField] float projectileSpawnInterval = 1f;
     [SerializeField] float propAngularVelocity;
     [SerializeField] Transform topSpawnMapLimit, bottomSpawnMapLimit;
     [SerializeField] int minTelegraphed, maxTelegraphed;
@@ -39,6 +40,28 @@ public class MindBoss : MonoBehaviour
     private int telegraphedLimit, telegraphedCounter;
     int telegraphedCountCurrentWaveLimit, currentTelegraphedCountCurrentWave;
 
+    [Header("Prop Waves")]
+    [SerializeField] GameObject[] propPrefabs;
+    [SerializeField] float propSpawnInterval = 1f;
+    [SerializeField] Vector2 propVelocity;
+    [SerializeField] int maxParryablePropDistance, propQuantity;
+    [SerializeField] int minWaves, maxWaves;
+    private int lastParryableIndex;
+    private int waveLimit, waveCounter;
+    private int WaveCounter
+    {
+        get => waveCounter;
+        set
+        {
+            waveCounter = value;
+            if(waveCounter >= waveLimit)
+            {
+                CancelInvoke(nameof(SpawnWave));
+                StartIdle();
+            }
+        }
+    }
+
 
 
     private Animator _animator;
@@ -46,20 +69,20 @@ public class MindBoss : MonoBehaviour
 
     public void LeftStomp()
     {
-        Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, this.transform).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
+        Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, maskParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
         StompCounter++;
     }
 
     public void RightStomp()
     {
-        Instantiate(groundStompPrefab, rightHandSpawnOrigin.position, Quaternion.identity, this.transform).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
+        Instantiate(groundStompPrefab, rightHandSpawnOrigin.position, Quaternion.identity, maskParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
         StompCounter++;
     }
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
-        attacks = new Attack[4] {Attack.GroundStomp, Attack.ParryableProjectile, Attack.ProjectileRain, Attack.TelegraphedHits};
+        attacks = new Attack[4] {Attack.GroundStomp, Attack.TentacleFrenzy, Attack.PropWaves, Attack.TelegraphedHits};
         areas = new Area[3] {Area.Top, Area.Center, Area.Bottom};
     }
 
@@ -72,12 +95,14 @@ public class MindBoss : MonoBehaviour
     {
         stompCounter = 0;
         stompLimit = Random.Range(minStomps, maxStomps + 1);
-        _animator.Play("GroundStomp", 0);
+        _animator.Play("Ground Stomps", 4);
+        _animator.Play("Attack", 0);
     }
 
     private void StartIdle()
     {
         _animator.Play("Idle", 0);
+        _animator.Play("Idle", 4);
 
         float wait = Random.Range(minWaitBetweenAttacks, maxWaitBetweenAttacks);
 
@@ -90,43 +115,32 @@ public class MindBoss : MonoBehaviour
             case Attack.TelegraphedHits:
                 Invoke(nameof(StartTelegraphed), wait);
                 break;
+            case Attack.PropWaves:
+                Invoke(nameof(StartPropWaves), wait);
+                break;
             default:
-                Invoke(nameof(StartTelegraphed), wait);
+                Invoke(nameof(StartPropWaves), wait);
                 break;
         }
     }
 
-    private void SpawnProp()
+    private void SpawnProjectile()
     {
         Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.x));
-        GameObject propPrefab = propPrefabs[Random.Range(0, propPrefabs.Length)];
+        GameObject spawnedProjectile = Instantiate(projectilePrefab, spawnPos, Quaternion.identity, maskParent);
+        Rigidbody2D projectileRigid = spawnedProjectile.GetComponent<Rigidbody2D>();
 
-        GameObject spawnedProp = Instantiate(propPrefab, spawnPos, Quaternion.identity, this.transform);
-        Rigidbody2D propRigid = spawnedProp.GetComponent<Rigidbody2D>();
-
-        if(Random.Range(0f, 1f) <= parryableRate)
-        {
-            spawnedProp.layer = LayerMask.NameToLayer("Parryable Prop");
-            spawnedProp.tag = "Parryable Prop";
-            //!! TEMP
-            spawnedProp.GetComponent<SpriteRenderer>().color = Color.yellow;
-        }
-        else
-        {
-            spawnedProp.layer = LayerMask.NameToLayer("Prop");
-            spawnedProp.tag = "Prop";
-        }
-
-        propRigid.velocity = propVelocity;
-        propRigid.angularVelocity = propAngularVelocity;
-
+        projectileRigid.velocity = projectileVelocity;
     }
 
     private void StartTelegraphed()
     {
         telegraphedCounter = 0;
         telegraphedLimit = Random.Range(minTelegraphed, maxTelegraphed + 1);
-        InvokeRepeating(nameof(SpawnProp), 0f, propSpawnInterval);
+        InvokeRepeating(nameof(SpawnProjectile), 0f, projectileSpawnInterval);
+
+        _animator.Play("Telegraphed Attacks", 4);
+        _animator.Play("Attack", 0);
 
         TelegraphedAttack();
     }
@@ -145,7 +159,7 @@ public class MindBoss : MonoBehaviour
         if(telegraphedCounter >= telegraphedLimit)
         {
             StartIdle();
-            CancelInvoke(nameof(SpawnProp));
+            CancelInvoke(nameof(SpawnProjectile));
             return;
         }
 
@@ -192,4 +206,44 @@ public class MindBoss : MonoBehaviour
             _animator.Play("Inactive", 3);
         }
     }
+
+    private void SpawnWave()
+    {
+        GameObject propPrefab;
+        GameObject[] spawnedProps = new GameObject[propQuantity];
+        Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, 0f);
+        
+        for(int i = 0; i < propQuantity; i++)
+        {
+            spawnPos.y = ((topSpawnMapLimit.position.y - bottomSpawnMapLimit.position.y) / propQuantity) * (i + 1) + bottomSpawnMapLimit.position.y;
+            propPrefab = propPrefabs[Random.Range(0, propPrefabs.Length)];
+            spawnedProps[i] = Instantiate(propPrefab, spawnPos, Quaternion.identity, maskParent);
+            Rigidbody2D propRigid = spawnedProps[i].GetComponent<Rigidbody2D>();
+            propRigid.velocity = propVelocity;
+            propRigid.angularVelocity = propAngularVelocity;
+        }
+        
+        int newParryableIndex;
+        do newParryableIndex = Random.Range(0, propQuantity);
+        while(Mathf.Abs(newParryableIndex - lastParryableIndex) > maxParryablePropDistance);
+
+        spawnedProps[newParryableIndex].layer = LayerMask.NameToLayer("Parryable Prop");
+        spawnedProps[newParryableIndex].tag = "Parryable Prop";
+        //!! TEMP
+        spawnedProps[newParryableIndex].GetComponent<SpriteRenderer>().color = Color.yellow;
+
+        lastParryableIndex = newParryableIndex;
+        WaveCounter++;
+    }
+
+    private void StartPropWaves()
+    {
+        waveCounter = 0;
+        waveLimit = Random.Range(minWaves, maxWaves + 1);
+
+        InvokeRepeating(nameof(SpawnWave), 0f, propSpawnInterval);
+        _animator.Play("Prop Waves", 4);
+        _animator.Play("Attack", 0);
+    }
+
 }

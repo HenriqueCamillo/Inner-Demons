@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &111958452445778579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6405315704263500924}
+  m_Layer: 0
+  m_Name: MaskParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6405315704263500924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111958452445778579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5478725426677889362}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1804472469094186208
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5478725425411749787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.24, y: -0.519, z: 0}
+  m_LocalPosition: {x: -1.24, y: -0.609, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5478725426000084544}
@@ -412,6 +442,7 @@ Transform:
   - {fileID: 5478725425211337686}
   - {fileID: 5359543995710055597}
   - {fileID: 5359543994924793071}
+  - {fileID: 6405315704263500924}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -466,23 +497,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minWaitBetweenAttacks: 3
   maxWaitBetweenAttacks: 5
+  maskParent: {fileID: 6405315704263500924}
   groundStompPrefab: {fileID: 3165067662677139465, guid: f92fb9012ebde184b95a958e58a6d58a, type: 3}
   groundStompVelocity: {x: -3, y: 0}
   minStomps: 3
   maxStomps: 6
   leftHandSpawnOrigin: {fileID: 5478725425411749786}
   rightHandSpawnOrigin: {fileID: 5478725425131921467}
-  propPrefabs:
-  - {fileID: 8260986387285543116, guid: 53d994d28b8f4fd498ae4d5114e042d2, type: 3}
-  - {fileID: 8260986387285543116, guid: 53d994d28b8f4fd498ae4d5114e042d2, type: 3}
-  propSpawnInterval: 1.5
-  parryableRate: 0.25
-  propVelocity: {x: -1.5, y: 0}
+  projectilePrefab: {fileID: 8260986387285543116, guid: 53d994d28b8f4fd498ae4d5114e042d2, type: 3}
+  projectileVelocity: {x: -1.5, y: 0}
+  projectileSpawnInterval: 1
   propAngularVelocity: 20
   topSpawnMapLimit: {fileID: 2319217968997520789}
   bottomSpawnMapLimit: {fileID: 2631854804893786886}
   minTelegraphed: 3
   maxTelegraphed: 5
+  propPrefabs:
+  - {fileID: 8260986387285543116, guid: 53d994d28b8f4fd498ae4d5114e042d2, type: 3}
+  - {fileID: 8260986387285543116, guid: 53d994d28b8f4fd498ae4d5114e042d2, type: 3}
+  propSpawnInterval: 2
+  propVelocity: {x: -2, y: 0}
+  maxParryablePropDistance: 4
+  propQuantity: 7
+  minWaves: 3
+  maxWaves: 5
 --- !u!1 &8563920952917662691
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8563920952917662691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.27, y: -0.895, z: 0}
+  m_LocalPosition: {x: -1.27, y: -1.042, z: 0}
   m_LocalScale: {x: 1, y: 0.203666, z: 1}
   m_Children: []
   m_Father: {fileID: 5478725426000084544}
