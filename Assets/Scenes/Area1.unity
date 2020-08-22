@@ -465,18 +465,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5478725426677889360, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: propVelocity.x
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5478725426677889360, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: propSpawnInterval
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5478725426677889360, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: parryableRate
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
