@@ -458,12 +458,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f6fac1ac1e8b741b2db8ae7375e92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parryableObjects: []
   maxFill: 100
   fillChangeSmoothness: 1
   fillChangeRate: 0.1
   fillGainAmount: 1
   fillGainRate: 0.5
+  area: 0
 --- !u!95 &5478725426677889361
 Animator:
   serializedVersion: 3
@@ -495,6 +495,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0c65603694a9b40adc0e53738658f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxFill: 100
+  fillChangeSmoothness: 1
+  fillChangeRate: 0.1
+  fillGainAmount: 1
+  fillGainRate: 0.5
+  area: 0
   minWaitBetweenAttacks: 3
   maxWaitBetweenAttacks: 5
   maskParent: {fileID: 6405315704263500924}
@@ -521,6 +527,10 @@ MonoBehaviour:
   propQuantity: 7
   minWaves: 3
   maxWaves: 5
+  tentaclePrefab: {fileID: 8260986387285543116, guid: 67b669d847d9e694b966d61669310bf9, type: 3}
+  tentacleSpawnInterval: 1
+  minTentacles: 3
+  maxTentacles: 5
 --- !u!1 &8563920952917662691
 GameObject:
   m_ObjectHideFlags: 0

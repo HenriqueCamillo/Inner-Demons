@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    [SerializeField] GameObject[] parryableObjects;
     [SerializeField] int maxFill;
     [SerializeField] int fillChangeSmoothness = 1;
     [SerializeField] float fillChangeRate = 1f;
     [SerializeField] int fillGainAmount = 1;
     [SerializeField] float fillGainRate = 0.5f;
+    [SerializeField] protected Power.Type area;
 
-    private Animator _animator;
+    protected Animator _animator;
 
     private int currentFill;
     private int CurrentFill
@@ -33,13 +33,13 @@ public class Boss : MonoBehaviour
 
     private float lerpTime = 0f;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         _animator = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         previousFill = currentFill;
         InvokeRepeating(nameof(Grow), 0f, fillGainRate);

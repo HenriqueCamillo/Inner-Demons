@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MindBoss : MonoBehaviour
+public class MindBoss : Boss
 {
     [Header("General")]
     [SerializeField] float minWaitBetweenAttacks;
@@ -62,9 +62,26 @@ public class MindBoss : MonoBehaviour
         }
     }
 
+    [Header("Tentacle Frenzy")]
+    [SerializeField] GameObject tentaclePrefab;
+    [SerializeField] float tentacleSpawnInterval = 1f;
+    [SerializeField] int minTentacles, maxTentacles;
+    private int tentacleLimit, tentacleCounter;
+    private int TentacleCounter
+    {
+        get => tentacleCounter;
+        set
+        {
+            tentacleCounter = value;
+            if(tentacleCounter >= tentacleLimit)
+            {
+                CancelInvoke(nameof(SpawnTentacle));
+                StartIdle();
+            }
+        }
+    }
 
 
-    private Animator _animator;
     bool isIdle = true;
 
     public void LeftStomp()
@@ -79,15 +96,16 @@ public class MindBoss : MonoBehaviour
         StompCounter++;
     }
 
-    private void Awake()
+    protected override void Awake()
     {
-        _animator = GetComponent<Animator>();
+        base.Awake();
         attacks = new Attack[4] {Attack.GroundStomp, Attack.TentacleFrenzy, Attack.PropWaves, Attack.TelegraphedHits};
         areas = new Area[3] {Area.Top, Area.Center, Area.Bottom};
     }
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         StartIdle();
     }
 
@@ -109,17 +127,20 @@ public class MindBoss : MonoBehaviour
         Attack nextAttack = attacks[Random.Range(0, attacks.Length)];
         switch(nextAttack)
         {
-            case Attack.GroundStomp:
-                Invoke(nameof(StartStomps), wait);
-                break;
-            case Attack.TelegraphedHits:
-                Invoke(nameof(StartTelegraphed), wait);
-                break;
-            case Attack.PropWaves:
-                Invoke(nameof(StartPropWaves), wait);
+            // case Attack.GroundStomp:
+            //     Invoke(nameof(StartStomps), wait);
+            //     break;
+            // case Attack.TelegraphedHits:
+            //     Invoke(nameof(StartTelegraphed), wait);
+            //     break;
+            // case Attack.PropWaves:
+            //     Invoke(nameof(StartPropWaves), wait);
+            //     break;
+            case Attack.TentacleFrenzy:
+                Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
             default:
-                Invoke(nameof(StartPropWaves), wait);
+                Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
         }
     }
@@ -243,6 +264,24 @@ public class MindBoss : MonoBehaviour
 
         InvokeRepeating(nameof(SpawnWave), 0f, propSpawnInterval);
         _animator.Play("Prop Waves", 4);
+        _animator.Play("Attack", 0);
+    }
+
+    private void SpawnTentacle()
+    {
+        if(BossesManager.instance.player.currrentArea == area)
+            Instantiate(tentaclePrefab, BossesManager.instance.player.transform.position, Quaternion.identity, maskParent);
+        
+        TentacleCounter++;
+    }
+
+    private void StartTentacleFrenzy()
+    {
+        tentacleCounter = 0;
+        tentacleLimit = Random.Range(minTentacles, maxTentacles + 1);
+
+        InvokeRepeating(nameof(SpawnTentacle), 0f, tentacleSpawnInterval);
+        _animator.Play("Tentacle Frenzy", 4);
         _animator.Play("Attack", 0);
     }
 

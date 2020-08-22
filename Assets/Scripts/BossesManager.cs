@@ -8,6 +8,7 @@ public class BossesManager : MonoBehaviour
 
     public Boss mindBoss;
     public Boss bodyBoss;
+    public Player player;
 
     [Space(5)]
     [Header("Damage and growth")]
