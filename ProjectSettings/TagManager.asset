@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Boss
+  - Prop
+  - Parryable Prop
+  - Projectile
   layers:
   - Default
   - TransparentFX

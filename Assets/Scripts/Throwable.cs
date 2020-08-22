@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public class Power 
+public class Throwable
 {
     public enum Type
     {
-        Mind,
-        Body
+        Projectile,
+        Prop
     }
 }

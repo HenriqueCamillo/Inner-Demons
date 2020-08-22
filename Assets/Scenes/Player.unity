@@ -357,8 +357,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxBodyPower: 100
   bodyPowerBar: {fileID: 1097712073}
+  bodyPowerReady: 0
   maxMindPower: 100
   mindPowerBar: {fileID: 1816628418}
+  mindPowerReady: 0
   projectileBonus: 10
   propBonus: 30
 --- !u!1 &895954543
@@ -595,8 +597,10 @@ GameObject:
   - component: {fileID: 1333175314}
   - component: {fileID: 1333175313}
   - component: {fileID: 1333175312}
+  - component: {fileID: 1333175315}
+  - component: {fileID: 1333175316}
   m_Layer: 0
-  m_Name: Projectile (1)
+  m_Name: MindBoss
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -686,13 +690,50 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333175311}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 77.72645, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 2067167577}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333175315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333175311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f6fac1ac1e8b741b2db8ae7375e92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parryableObjects: []
+  maxFill: 100
+  fillChangeSmoothness: 1
+  fillChangeRate: 1
+  fillGainAmount: 1
+  fillGainRate: 0.5
+--- !u!95 &1333175316
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333175311}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1816628416
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,6 +809,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816628416}
   m_CullTransparentMesh: 0
+--- !u!1 &2067167575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067167577}
+  - component: {fileID: 2067167576}
+  m_Layer: 0
+  m_Name: Bosses
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2067167576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067167575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d1296c76feade439e13b39bb2a8f14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mindBoss: {fileID: 1333175315}
+  bodyBoss: {fileID: 2718587324281325515}
+  projectileDamage: 0
+  propDamage: 0
+  hitGrowth: 0
+--- !u!4 &2067167577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067167575}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2718587324281325558}
+  - {fileID: 1333175314}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &689381661465144907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -840,13 +931,52 @@ GameObject:
   - component: {fileID: 2718587324281325558}
   - component: {fileID: 2718587324281325557}
   - component: {fileID: 3204820093852405420}
+  - component: {fileID: 2718587324281325515}
+  - component: {fileID: 2718587324281325516}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: BodyBoss
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2718587324281325515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2718587324281325514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f6fac1ac1e8b741b2db8ae7375e92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parryableObjects: []
+  maxFill: 100
+  fillChangeSmoothness: 1
+  fillChangeRate: 1
+  fillGainAmount: 1
+  fillGainRate: 0.5
+--- !u!95 &2718587324281325516
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2718587324281325514}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &2718587324281325557
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -905,12 +1035,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2718587324281325514}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.74, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 77.72645, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 2067167577}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3204820093852405420
 BoxCollider2D:

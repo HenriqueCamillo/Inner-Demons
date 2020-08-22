@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] Rigidbody2D rBody;
     [SerializeField] float speed;
     private Power.Type powerType;
-    private PowerGaugeManager.BonusType bonusType = PowerGaugeManager.BonusType.Projectile;
+    private Throwable.Type throwableType = Throwable.Type.Projectile;
     void Start()
     {
         rBody.velocity = this.transform.right * speed;
@@ -22,8 +22,8 @@ public class Projectile : MonoBehaviour
     {
         if (other.CompareTag("Boss"))
         {
-            PowerGaugeManager.instance.AddGaugeBonus(powerType, bonusType);
-            // Boss stuff
+            PowerGaugeManager.instance.AddGaugeBonus(powerType, throwableType);
+            BossesManager.instance.GetBoss(powerType).Shrink(powerType, throwableType);
         }
         
         Destroy(this.gameObject);

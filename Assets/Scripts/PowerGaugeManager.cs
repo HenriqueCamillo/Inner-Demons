@@ -11,37 +11,28 @@ public class PowerGaugeManager : MonoBehaviour
     [SerializeField] float maxBodyPower;
     [SerializeField] Image bodyPowerBar;
     private float bodyPower;
+    public bool bodyPowerReady;
 
     [Space(5)]
     [Header("Mind Power Gauge")]
     [SerializeField] float maxMindPower;
     [SerializeField] Image mindPowerBar;
     private float mindPower;
+    public bool mindPowerReady;
 
     [Space(5)]
     [Header("Gauge Bonuses")]
     [SerializeField] float projectileBonus;
     [SerializeField] float propBonus;
 
-    public enum BonusType
-    {
-        Projectile,
-        Prop
-    }
-
     public float BodyPower
     {
         get => bodyPower;
         set 
         {
-            if (value <= 0f)
-                bodyPower = 0f;
-            else if (value >= maxBodyPower)
-                bodyPower = maxBodyPower;
-            else
-                bodyPower = value;
-
+            bodyPower = Mathf.Clamp(value, 0f, maxBodyPower);
             bodyPowerBar.fillAmount = bodyPower / maxBodyPower;
+            bodyPowerReady = bodyPower == maxBodyPower;
         }
     }
 
@@ -50,14 +41,9 @@ public class PowerGaugeManager : MonoBehaviour
         get => mindPower;
         set 
         {
-            if (value <= 0f)
-                mindPower = 0f;
-            else if (value >= maxMindPower)
-                mindPower = maxMindPower;
-            else
-                mindPower = value;
-
+            mindPower = Mathf.Clamp(value, 0f, maxMindPower);
             mindPowerBar.fillAmount = mindPower / maxMindPower;
+            mindPowerReady = mindPower == maxMindPower;
         }
     }
 
@@ -72,13 +58,27 @@ public class PowerGaugeManager : MonoBehaviour
         MindPower = 0f;
     }
 
-    public void AddGaugeBonus(Power.Type powerType, BonusType bonusType)
+    public void AddGaugeBonus(Power.Type powerType, Throwable.Type bonusType)
     {
-        float bonus = bonusType == BonusType.Projectile ? projectileBonus : propBonus;
+        float bonus = bonusType == Throwable.Type.Projectile ? projectileBonus : propBonus;
 
         if (powerType == Power.Type.Body)
             BodyPower += bonus;
         else if (powerType == Power.Type.Mind)
             MindPower += bonus;
+    }
+
+    public void UsePower(Power.Type powerType)
+    {
+        if (powerType == Power.Type.Body)
+        {
+            Debug.Log("Used body power");
+            BodyPower = 0f;
+        }
+        else if (powerType == Power.Type.Mind)
+        {
+            Debug.Log("Used mind power");
+            MindPower = 0f;
+        }
     }
 }
