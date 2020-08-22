@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         set
         {
             timeRemaining = Mathf.Clamp(value, 0f, crysisDuration);
-            timer.text = (timeRemaining/60).ToString() + ":" + (timeRemaining%60).ToString().PadLeft(2, '0');
+            timer.text = ((int)timeRemaining/60).ToString() + ":" + ((int)timeRemaining%60).ToString().PadLeft(2, '0');
 
             if (timeRemaining == 0)
                 GameOver();
@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
             instance = this;
         else if (instance != this)
             Destroy(this.gameObject);
+
+        TimeRemaining = crysisDuration;
     }
 
     void Update()
