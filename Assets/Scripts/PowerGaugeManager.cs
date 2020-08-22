@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class PowerGaugeManager : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class PowerGaugeManager : MonoBehaviour
     [Header("Gauge Bonuses")]
     [SerializeField] float projectileBonus;
     [SerializeField] float propBonus;
+
+    public event Action OnMindPowerUsed;
+    public event Action OnBodyPowerUsed;
 
     public float BodyPower
     {
@@ -74,11 +78,14 @@ public class PowerGaugeManager : MonoBehaviour
         {
             Debug.Log("Used body power");
             BodyPower = 0f;
+            OnBodyPowerUsed?.Invoke();
         }
         else if (powerType == Power.Type.Mind)
         {
             Debug.Log("Used mind power");
             MindPower = 0f;
+            OnMindPowerUsed?.Invoke();
         }
+        BossesManager.instance.GetBoss(powerType).SpecialShrink();
     }
 }

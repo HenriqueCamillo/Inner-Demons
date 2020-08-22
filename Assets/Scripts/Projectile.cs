@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
     {
         rBody.velocity = this.transform.right * speed;
 
-        if (rBody.velocity.x > 0)
+        if (rBody.velocity.x < 0)
             powerType = Power.Type.Body;
         else 
             powerType = Power.Type.Mind;
@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
         if (other.CompareTag("Boss"))
         {
             PowerGaugeManager.instance.AddGaugeBonus(powerType, throwableType);
-            BossesManager.instance.GetBoss(powerType).Shrink(powerType, throwableType);
+            BossesManager.instance.GetBoss(powerType).Shrink(throwableType);
         }
         
         Destroy(this.gameObject);

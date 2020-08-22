@@ -61,9 +61,14 @@ public class Boss : MonoBehaviour
         CurrentFill += BossesManager.instance.hitGrowth;
     }
 
-    public void Shrink(Power.Type type, Throwable.Type damageType)
+    public void Shrink(Throwable.Type damageType)
     {
-        CurrentFill -= (int)BossesManager.instance.GetDamage(damageType);
+        CurrentFill -= BossesManager.instance.GetDamage(damageType);
+    }
+
+    public void SpecialShrink()
+    {
+        CurrentFill -= BossesManager.instance.specialDamage;
     }
 
     private void Update()

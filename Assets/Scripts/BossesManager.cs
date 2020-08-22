@@ -11,8 +11,9 @@ public class BossesManager : MonoBehaviour
 
     [Space(5)]
     [Header("Damage and growth")]
-    [SerializeField] float projectileDamage;
-    [SerializeField] float propDamage;
+    [SerializeField] int projectileDamage;
+    [SerializeField] int propDamage;
+    public int specialDamage;
     public int hitGrowth;
 
     void Awake()
@@ -36,7 +37,7 @@ public class BossesManager : MonoBehaviour
         }
     }
 
-    public float GetDamage(Throwable.Type damageType)
+    public int GetDamage(Throwable.Type damageType)
     {
         if (damageType == Throwable.Type.Projectile)
             return projectileDamage;
@@ -45,7 +46,7 @@ public class BossesManager : MonoBehaviour
         else 
         {
             Debug.LogError("Unkown damage type");
-            return 0f;
+            return 0;
         }
     }
 }

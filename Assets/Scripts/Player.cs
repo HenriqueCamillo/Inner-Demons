@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private Vector2 movement;
 
     [Header("Areas")]
-    [SerializeField] bool isInMindArea;
+    [SerializeField] bool isInBodyArea;
     [SerializeField] Transform centerLine;
     public Power.Type currrentArea;
 
@@ -30,16 +30,17 @@ public class Player : MonoBehaviour
 
     private bool isUsingPower;
 
-    public bool IsInMindArea
+    public bool IsInBodyArea
     {
-        get => isInMindArea;
+        get => isInBodyArea;
         private set 
         {
-            isInMindArea = value;
+            isInBodyArea = value;
             sRenderer.flipX = value;
-            animator.SetBool("InMindArea", value);
+            animator.SetBool("InBodyArea", value);
 
-            currrentArea = isInMindArea ? Power.Type.Mind : Power.Type.Body;
+            currrentArea = isInBodyArea ? Power.Type.Body : Power.Type.Mind;
+            reflector.SetupColliders();
         }
     }
 
@@ -78,22 +79,22 @@ public class Player : MonoBehaviour
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         animator.SetBool("Moving", movement != Vector2.zero);
 
-        if (!IsInMindArea && this.transform.position.x < centerLine.transform.position.x)
-            IsInMindArea = true;
-        else if (IsInMindArea && this.transform.position.x > centerLine.transform.position.x)
-            IsInMindArea = false;
+        if (!IsInBodyArea && this.transform.position.x < centerLine.transform.position.x)
+            IsInBodyArea = true;
+        else if (IsInBodyArea && this.transform.position.x > centerLine.transform.position.x)
+            IsInBodyArea = false;
 
         // TODO add controller support
         if (Input.GetKeyDown(KeyCode.Z) && !IsReflecting && !IsUsingPower)
         {
-            if (IsInMindArea && PowerGaugeManager.instance.mindPowerReady)
+            if (!IsInBodyArea && PowerGaugeManager.instance.mindPowerReady)
             {
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Mind);
                 // TODO animation event
                 Invoke(nameof(OnPowerEnd), .5f);
             }
-            else if (!IsInMindArea && PowerGaugeManager.instance.bodyPowerReady)
+            else if (IsInBodyArea && PowerGaugeManager.instance.bodyPowerReady)
             {
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Body);
@@ -119,7 +120,7 @@ public class Player : MonoBehaviour
 
     void Shoot()
     {
-        Quaternion rotation = IsInMindArea ? Quaternion.Euler(180f, 180f, 0f) : Quaternion.identity;
+        Quaternion rotation = IsInBodyArea ? Quaternion.Euler(180f, 180f, 0f) : Quaternion.identity;
         Instantiate(projectile, this.transform.position, rotation);
     }
 
@@ -129,12 +130,15 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Murreu");
         }
-        else if (other.CompareTag("Prop") || other.CompareTag("Parryable Prop"))
-        {
-            IsReflecting = false;
-            IsUsingPower = false;
-            BossesManager.instance.GetBoss(currrentArea).HitGrow();
-        }
+    }
+
+    public void TakeDamage()
+    {
+        IsReflecting = false;
+        IsUsingPower = false;
+        BossesManager.instance.GetBoss(currrentArea).HitGrow();
+
+        // TODO invincibility
     }
 
     public void OnPowerEnd()

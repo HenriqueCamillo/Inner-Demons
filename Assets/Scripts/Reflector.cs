@@ -9,14 +9,19 @@ public class Reflector : MonoBehaviour
     [SerializeField] Collider2D rightCollider;
     [SerializeField] Collider2D leftCollider;
 
-    void OnEnable()
+    void OnEnable() 
     {
-        if (player.currrentArea == Power.Type.Mind)
+        SetupColliders();
+    }
+
+    public void SetupColliders()
+    {
+        if (player.currrentArea == Power.Type.Body)
         {
             rightCollider.gameObject.SetActive(false);
             leftCollider.gameObject.SetActive(true);
         }
-        else if (player.currrentArea == Power.Type.Body)
+        else if (player.currrentArea == Power.Type.Mind)
         {
             rightCollider.gameObject.SetActive(true);
             leftCollider.gameObject.SetActive(false);
@@ -25,9 +30,10 @@ public class Reflector : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Parryable Prop"))
-        {
+        // Debug.Log(other.name);
+        // if (other.CompareTag("Parryable Prop"))
+        // {
             other.GetComponent<Prop>().Reflect(reflectionForce);
-        }
+        // }
     }
 }

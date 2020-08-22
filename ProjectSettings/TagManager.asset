@@ -17,13 +17,13 @@ TagManager:
   - UI
   - 
   - 
-  - Parryable
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Projectile
+  - Prop
+  - Boss
+  - Parryable Prop
+  - Reflector
+  - Player
+  - Killzone
   - 
   - 
   - 
