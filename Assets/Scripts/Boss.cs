@@ -56,6 +56,16 @@ public class Boss : MonoBehaviour
         CurrentFill += fillGainAmount;
     }
 
+    public void HitGrow()    
+    {
+        CurrentFill += BossesManager.instance.hitGrowth;
+    }
+
+    public void Shrink(Power.Type type, Throwable.Type damageType)
+    {
+        CurrentFill -= (int)BossesManager.instance.GetDamage(damageType);
+    }
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.K))
