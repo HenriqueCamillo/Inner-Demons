@@ -129,7 +129,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Boss"))
         {
-            Debug.Log("Murreu");
+            GameManager.instance.GameOver();
         }
     }
 
