@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private Vector2 movement;
 
     [Header("Different Sides")]
-    [SerializeField] bool isFacingRight;
+    [SerializeField] bool isInMindArea;
     [SerializeField] Transform centerLine;
 
     [Space(5f)]
@@ -21,15 +21,18 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject projectile;
     [SerializeField] float shootCooldown;
 
+    [Space(5)]
+    [Header("Special Attacks")]
+    [SerializeField] float bodyPowerGauge;
+    [SerializeField] float mindPowerGauge;
 
-
-    public bool IsFacingRight
+    public bool IsInMindArea
     {
-        get => isFacingRight;
+        get => isInMindArea;
         private set 
         {
-            isFacingRight = value;
-            animator.SetBool("FacingRight", value);
+            isInMindArea = value;
+            animator.SetBool("InMindArea", value);
         }
     }
 
@@ -49,10 +52,10 @@ public class Player : MonoBehaviour
     {
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        if (IsFacingRight && this.transform.position.x < centerLine.transform.position.x)
-            IsFacingRight = false;
-        else if (!IsFacingRight && this.transform.position.x > centerLine.transform.position.x)
-            IsFacingRight = true;
+        if (!IsInMindArea && this.transform.position.x < centerLine.transform.position.x)
+            IsInMindArea = true;
+        else if (IsInMindArea && this.transform.position.x > centerLine.transform.position.x)
+            IsInMindArea = false;
     }
 
     void FixedUpdate()
@@ -62,7 +65,7 @@ public class Player : MonoBehaviour
 
     void Shoot()
     {
-        Quaternion rotation = IsFacingRight ? Quaternion.identity : Quaternion.Euler(180f, 180f, 0f);
+        Quaternion rotation = IsInMindArea ? Quaternion.Euler(180f, 180f, 0f) : Quaternion.identity;
         Instantiate(projectile, this.transform.position, rotation);
     }
 }

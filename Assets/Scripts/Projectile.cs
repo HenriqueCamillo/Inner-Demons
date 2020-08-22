@@ -6,9 +6,26 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rBody;
     [SerializeField] float speed;
-
+    private Power.Type powerType;
+    private PowerGaugeManager.BonusType bonusType = PowerGaugeManager.BonusType.Projectile;
     void Start()
     {
         rBody.velocity = this.transform.right * speed;
+
+        if (rBody.velocity.x > 0)
+            powerType = Power.Type.Body;
+        else 
+            powerType = Power.Type.Mind;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Boss"))
+        {
+            PowerGaugeManager.instance.AddGaugeBonus(powerType, bonusType);
+            // Boss stuff
+        }
+        
+        Destroy(this.gameObject);
     }
 }
