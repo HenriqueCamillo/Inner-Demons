@@ -34,7 +34,7 @@ public class Prop : MonoBehaviour
         rBody.velocity = direction * force;
     }
 
-    void SelfDestruct()
+    public void SelfDestruct()
     {
         Destroy(this.gameObject);
     }
