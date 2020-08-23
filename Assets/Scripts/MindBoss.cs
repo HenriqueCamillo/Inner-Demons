@@ -109,7 +109,8 @@ public class MindBoss : Boss
     protected override void Start()
     {
         base.Start();
-        StartIdle();
+        float waitTime = Random.Range(0f, 3f);
+        Invoke(nameof(StartIdle), waitTime);
         _animator.ResetTrigger("Idle");
     }
 
@@ -133,27 +134,27 @@ public class MindBoss : Boss
         Debug.Log("Next attack: " + nextAttack);
         switch(nextAttack)
         {
-            case Attack.GroundStomp:
-                Invoke(nameof(StartStomps), wait);
-                break;
-            case Attack.TelegraphedHits:
-                Invoke(nameof(StartTelegraphed), wait);
-                break;
-            case Attack.PropWaves:
-                Invoke(nameof(StartPropWaves), wait);
-                break;
-            case Attack.TentacleFrenzy:
-                Invoke(nameof(StartTentacleFrenzy), wait);
-                break;
+            // case Attack.GroundStomp:
+            //     Invoke(nameof(StartStomps), wait);
+            //     break;
+            // case Attack.TelegraphedHits:
+            //     Invoke(nameof(StartTelegraphed), wait);
+            //     break;
+            // case Attack.PropWaves:
+            //     Invoke(nameof(StartPropWaves), wait);
+            //     break;
+            // case Attack.TentacleFrenzy:
+            //     Invoke(nameof(StartTentacleFrenzy), wait);
+            //     break;
             default:
-                Invoke(nameof(StartPropWaves), wait);
+                Invoke(nameof(StartTelegraphed), wait);
                 break;
         }
     }
 
     private void SpawnProjectile()
     {
-        Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.x));
+        Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.y));
         GameObject spawnedProjectile = Instantiate(projectilePrefab, spawnPos, Quaternion.identity, spawnsParent);
         Rigidbody2D projectileRigid = spawnedProjectile.GetComponent<Rigidbody2D>();
 

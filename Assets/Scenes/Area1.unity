@@ -822,7 +822,7 @@ SpriteMask:
   m_BackSortingOrder: -25
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
---- !u!43 &666394049
+--- !u!43 &686444129
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1134,8 +1134,8 @@ MonoBehaviour:
   - {x: 1.2005229, y: 1.2144197, z: 0}
   - {x: -1.2144176, y: 1.2144198, z: 0}
   m_ShapePathHash: 20117894
-  m_Mesh: {fileID: 666394049}
-  m_InstanceId: 141414
+  m_Mesh: {fileID: 686444129}
+  m_InstanceId: 154536
 --- !u!61 &895954549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1672,18 +1672,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 689381660744639853, guid: b84d9c5558ae4b74e8a9f24aadcfb347, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 689381660744639853, guid: b84d9c5558ae4b74e8a9f24aadcfb347, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 689381660744639853, guid: b84d9c5558ae4b74e8a9f24aadcfb347, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 689381660744639853, guid: b84d9c5558ae4b74e8a9f24aadcfb347, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1736,6 +1724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2067167577}
     m_Modifications:
+    - target: {fileID: 1324689912121377747, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7140683007980186304, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25
@@ -1812,6 +1804,10 @@ PrefabInstance:
       propertyPath: propVelocity.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7140683007980186306, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 6468363268342907023, guid: 12194557d8c4b75488ef9bfdf6cf96a4, type: 3}
     - target: {fileID: 7140683007980186310, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_Name
       value: BodyBoss(left)
