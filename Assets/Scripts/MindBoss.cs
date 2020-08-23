@@ -11,7 +11,7 @@ public class MindBoss : Boss
     [Header("General")]
     [SerializeField] float minWaitBetweenAttacks;
     [SerializeField] float maxWaitBetweenAttacks;
-    [SerializeField] Transform maskParent;
+    [SerializeField] Transform spawnsParent;
     enum Attack { GroundStomp, PropWaves, TentacleFrenzy, TelegraphedHits }
     Attack[] attacks;
 
@@ -89,13 +89,13 @@ public class MindBoss : Boss
 
     public void LeftStomp()
     {
-        Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, maskParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
+        Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, spawnsParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
         StompCounter++;
     }
 
     public void RightStomp()
     {
-        Instantiate(groundStompPrefab, rightHandSpawnOrigin.position, Quaternion.identity, maskParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
+        Instantiate(groundStompPrefab, rightHandSpawnOrigin.position, Quaternion.identity, spawnsParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
         StompCounter++;
     }
 
@@ -154,7 +154,7 @@ public class MindBoss : Boss
     private void SpawnProjectile()
     {
         Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.x));
-        GameObject spawnedProjectile = Instantiate(projectilePrefab, spawnPos, Quaternion.identity, maskParent);
+        GameObject spawnedProjectile = Instantiate(projectilePrefab, spawnPos, Quaternion.identity, spawnsParent);
         Rigidbody2D projectileRigid = spawnedProjectile.GetComponent<Rigidbody2D>();
 
         projectileRigid.velocity = projectileVelocity;
@@ -244,7 +244,7 @@ public class MindBoss : Boss
         {
             spawnPos.y = ((topSpawnMapLimit.position.y - bottomSpawnMapLimit.position.y) / propQuantity) * (i + 1) + bottomSpawnMapLimit.position.y;
             propPrefab = propPrefabs[Random.Range(0, propPrefabs.Length)];
-            spawnedProps[i] = Instantiate(propPrefab, spawnPos, Quaternion.identity, maskParent);
+            spawnedProps[i] = Instantiate(propPrefab, spawnPos, Quaternion.identity, spawnsParent);
             Rigidbody2D propRigid = spawnedProps[i].GetComponent<Rigidbody2D>();
             propRigid.velocity = propVelocity;
             propRigid.angularVelocity = propAngularVelocity;
@@ -283,7 +283,7 @@ public class MindBoss : Boss
     private void SpawnTentacle()
     {
         if(BossesManager.instance.player.currrentArea == area)
-            Instantiate(tentaclePrefab, BossesManager.instance.player.transform.position, Quaternion.identity, maskParent);
+            Instantiate(tentaclePrefab, BossesManager.instance.player.transform.position, Quaternion.identity, spawnsParent);
         
         TentacleCounter++;
     }
