@@ -74,6 +74,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void Vote()
+    {
+        Application.OpenURL("https://rebrand.ly/innerdemons");
+    }
+
     private void OvercameCrisis()
     {
         Debug.Log("Congratulations, you have overcome your crisis");
