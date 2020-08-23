@@ -57,11 +57,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4729815998490941889, guid: d9f95a1355f5d3c4fa103725ebfbc727, type: 3}
       propertyPath: m_Name
-      value: Pills
+      value: Pills Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8410536002720773502, guid: d9f95a1355f5d3c4fa103725ebfbc727, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6844551321710596339, guid: 20dd00bd4d20bc54dadc927993cbc5ec, type: 3}
+    - target: {fileID: 8410536002720773502, guid: d9f95a1355f5d3c4fa103725ebfbc727, type: 3}
+      propertyPath: m_SortingOrder
+      value: -18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9f95a1355f5d3c4fa103725ebfbc727, type: 3}

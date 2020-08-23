@@ -812,17 +812,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &317656863 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5478725426677889363, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-  m_PrefabInstance: {fileID: 5478725425083098439}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9f6fac1ac1e8b741b2db8ae7375e92a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &354854451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,6 +1854,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1132479241 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5478725426677889360, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+  m_PrefabInstance: {fileID: 5478725425083098439}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0c65603694a9b40adc0e53738658f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1293041670
 Mesh:
   m_ObjectHideFlags: 0
@@ -3200,7 +3200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d1296c76feade439e13b39bb2a8f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mindBoss: {fileID: 317656863}
+  mindBoss: {fileID: 1132479241}
   bodyBoss: {fileID: 1481424477}
   player: {fileID: 914555107}
   projectileDamage: 2
@@ -3429,6 +3429,10 @@ PrefabInstance:
       propertyPath: propPrefabs.Array.data[4]
       value: 
       objectReference: {fileID: 2827848125561452601, guid: 3c5fdac3405b8194ea7d5dc0ce3cb19e, type: 3}
+    - target: {fileID: 7140683007980186306, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: propVelocity.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7140683007980186310, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_Name
       value: BodyBoss(left)
@@ -3442,26 +3446,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2067167577}
     m_Modifications:
-    - target: {fileID: 156034287, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: m_Offset.x
-      value: 4.596137
-      objectReference: {fileID: 0}
-    - target: {fileID: 156034287, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: m_Size.x
-      value: 8.991224
-      objectReference: {fileID: 0}
-    - target: {fileID: 2319217968997520789, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 2631854804893786886, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 5478725425411749786, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.29
-      objectReference: {fileID: 0}
     - target: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

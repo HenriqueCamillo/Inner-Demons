@@ -11,9 +11,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3749634075332646668, guid: 20dd00bd4d20bc54dadc927993cbc5ec, type: 3}
+    - target: {fileID: 1307486015473390726, guid: 3c5fdac3405b8194ea7d5dc0ce3cb19e, type: 3}
+      propertyPath: m_SortingOrder
+      value: -18
+      objectReference: {fileID: 0}
     - target: {fileID: 2827848125561452601, guid: 3c5fdac3405b8194ea7d5dc0ce3cb19e, type: 3}
       propertyPath: m_Name
-      value: Magazine
+      value: Magazine Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4761447986506138621, guid: 3c5fdac3405b8194ea7d5dc0ce3cb19e, type: 3}
       propertyPath: m_LocalPosition.x

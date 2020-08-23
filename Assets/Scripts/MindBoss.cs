@@ -133,20 +133,20 @@ public class MindBoss : Boss
         Debug.Log("Next attack: " + nextAttack);
         switch(nextAttack)
         {
-            // case Attack.GroundStomp:
-            //     Invoke(nameof(StartStomps), wait);
-            //     break;
-            // case Attack.TelegraphedHits:
-            //     Invoke(nameof(StartTelegraphed), wait);
-            //     break;
-            // case Attack.PropWaves:
-            //     Invoke(nameof(StartPropWaves), wait);
-            //     break;
-            // case Attack.TentacleFrenzy:
-            //     Invoke(nameof(StartTentacleFrenzy), wait);
-            //     break;
-            default:
+            case Attack.GroundStomp:
                 Invoke(nameof(StartStomps), wait);
+                break;
+            case Attack.TelegraphedHits:
+                Invoke(nameof(StartTelegraphed), wait);
+                break;
+            case Attack.PropWaves:
+                Invoke(nameof(StartPropWaves), wait);
+                break;
+            case Attack.TentacleFrenzy:
+                Invoke(nameof(StartTentacleFrenzy), wait);
+                break;
+            default:
+                Invoke(nameof(StartPropWaves), wait);
                 break;
         }
     }

@@ -11,9 +11,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2277136054336411501, guid: 20dd00bd4d20bc54dadc927993cbc5ec, type: 3}
+    - target: {fileID: 75428894463527001, guid: 1cb513875c8889848a4846470248291c, type: 3}
+      propertyPath: m_SortingOrder
+      value: -18
+      objectReference: {fileID: 0}
     - target: {fileID: 3751618713175041254, guid: 1cb513875c8889848a4846470248291c, type: 3}
       propertyPath: m_Name
-      value: AlarmClock
+      value: AlarmClock Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5853247968310402850, guid: 1cb513875c8889848a4846470248291c, type: 3}
       propertyPath: m_LocalPosition.x
