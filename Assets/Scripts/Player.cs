@@ -28,6 +28,11 @@ public class Player : MonoBehaviour
     [SerializeField] Reflector reflector;
     private bool isReflecting;
 
+    [Space(5)]
+    [Header("Sound")]
+    [SerializeField] AudioSource _audio;
+    [SerializeField] AudioClip bodyDamage, mindDamage;
+
     private bool isUsingPower;
     private bool isInvincible;
     private bool isTransforming;
@@ -149,6 +154,20 @@ public class Player : MonoBehaviour
             IsReflecting = false;
             IsUsingPower = false;
             isInvincible = true;
+
+            if(!_audio.isPlaying)
+            {
+                if(damageType == Power.Type.Body)
+                {
+                    _audio.clip = bodyDamage;
+                    _audio.Play();
+                }
+                else
+                {
+                    _audio.clip = mindDamage;
+                    _audio.Play();
+                }
+            }
 
             animator.SetTrigger("Damage");
             BossesManager.instance.GetBoss(currrentArea).HitGrow();
