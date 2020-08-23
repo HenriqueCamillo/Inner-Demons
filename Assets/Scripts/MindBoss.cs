@@ -147,7 +147,7 @@ public class MindBoss : Boss
                 Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
             default:
-                Invoke(nameof(StartTelegraphed), wait);
+                Invoke(nameof(StartStomps), wait);
                 break;
         }
     }
