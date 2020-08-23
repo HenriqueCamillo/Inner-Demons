@@ -77,9 +77,9 @@ SpriteMask:
   m_BackSortingLayerID: 0
   m_FrontSortingLayer: 0
   m_BackSortingLayer: 0
-  m_FrontSortingOrder: 0
-  m_BackSortingOrder: 0
-  m_IsCustomRangeActive: 0
+  m_FrontSortingOrder: -10
+  m_BackSortingOrder: -15
+  m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
 --- !u!1 &1804472469094186208
 GameObject:
@@ -592,7 +592,7 @@ MonoBehaviour:
   maxStomps: 6
   leftHandSpawnOrigin: {fileID: 5478725425411749786}
   rightHandSpawnOrigin: {fileID: 5478725425131921467}
-  projectilePrefab: {fileID: 8260986387285543116, guid: 53d994d28b8f4fd498ae4d5114e042d2, type: 3}
+  projectilePrefab: {fileID: 6468363268342907023, guid: 617230aa05922c349a0dbdc63f8944e5, type: 3}
   projectileVelocity: {x: -1.5, y: 0}
   projectileSpawnInterval: 1
   propAngularVelocity: 20
