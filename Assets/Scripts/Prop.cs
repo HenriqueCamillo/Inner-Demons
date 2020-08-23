@@ -39,6 +39,11 @@ public class Prop : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    public void SelfDestructAfter(float time)
+    {
+        Invoke(nameof(SelfDestruct), time);
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (reflected && other.CompareTag("Boss"))

@@ -2116,6 +2116,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.84
       objectReference: {fileID: 0}
+    - target: {fileID: 7140683007605091794, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140683007605091794, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.12
+      objectReference: {fileID: 0}
     - target: {fileID: 7140683007605091805, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_SortingLayerID
       value: -1188667649
@@ -2204,6 +2212,10 @@ PrefabInstance:
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 6468363268342907023, guid: 12194557d8c4b75488ef9bfdf6cf96a4, type: 3}
+    - target: {fileID: 7140683007980186306, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: tentaclePrefab
+      value: 
+      objectReference: {fileID: 8260986387285543116, guid: 0b9c1e4dcb2944041917dc53a6cf93b5, type: 3}
     - target: {fileID: 7140683007980186310, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_Name
       value: BodyBoss(left)

@@ -109,7 +109,7 @@ public class MindBoss : Boss
     protected override void Start()
     {
         base.Start();
-        float waitTime = Random.Range(0f, 3f);
+        float waitTime = Random.Range(0f, 1.5f);
         Invoke(nameof(StartIdle), waitTime);
         _animator.ResetTrigger("Idle");
     }
@@ -147,7 +147,7 @@ public class MindBoss : Boss
             //     Invoke(nameof(StartTentacleFrenzy), wait);
             //     break;
             default:
-                Invoke(nameof(StartTelegraphed), wait);
+                Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
         }
     }
