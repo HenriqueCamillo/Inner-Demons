@@ -7,22 +7,26 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] float crysisDuration;
+    [SerializeField] float crisisDuration;
     private float timeRemaining;
     [SerializeField] TextMeshProUGUI timer;
     [SerializeField] GameObject pauseMenu;
     public bool isPaused;
+    private bool timerEnabled = true;
 
     public float TimeRemaining
     {
         get => timeRemaining;
         set
         {
-            timeRemaining = Mathf.Clamp(value, 0f, crysisDuration);
+            timeRemaining = Mathf.Clamp(value, 0f, crisisDuration);
             timer.text = ((int)timeRemaining/60).ToString() + ":" + ((int)timeRemaining%60).ToString().PadLeft(2, '0');
 
             if (timeRemaining == 0)
-                GameOver();
+            {
+                timerEnabled = false;
+                OvercameCrisis();
+            }
         }
     }
 
@@ -33,7 +37,7 @@ public class GameManager : MonoBehaviour
         else if (instance != this)
             Destroy(this.gameObject);
 
-        TimeRemaining = crysisDuration;
+        TimeRemaining = crisisDuration;
         pauseMenu.SetActive(false);
     }
 
@@ -44,7 +48,8 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
-        TimeRemaining -= Time.deltaTime;
+        if (timerEnabled)
+            TimeRemaining -= Time.deltaTime;
     }
 
     public void Pause()
@@ -60,8 +65,12 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        
         Debug.Log("Game over");
         // SceneManager.LoadScene(0);
+    }
+
+    private void OvercameCrisis()
+    {
+        Debug.Log("Congratulations, you have overcome your crisis");
     }
 }

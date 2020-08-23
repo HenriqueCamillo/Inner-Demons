@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MindBoss : Boss
 {
+    public event System.Action OnPropWavesPreparation;
+    public event System.Action OnPropWavesStart;
+    public event System.Action OnPropWavesEnd;
+
     [Header("General")]
     [SerializeField] float minWaitBetweenAttacks;
     [SerializeField] float maxWaitBetweenAttacks;
@@ -56,6 +60,7 @@ public class MindBoss : Boss
             waveCounter = value;
             if(waveCounter >= waveLimit)
             {
+                OnPropWavesEnd?.Invoke();
                 CancelInvoke(nameof(SpawnWave));
                 StartIdle();
             }
@@ -82,8 +87,6 @@ public class MindBoss : Boss
     }
 
 
-    bool isIdle = true;
-
     public void LeftStomp()
     {
         Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, maskParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
@@ -107,6 +110,7 @@ public class MindBoss : Boss
     {
         base.Start();
         StartIdle();
+        _animator.ResetTrigger("Idle");
     }
 
     private void StartStomps()
@@ -120,24 +124,29 @@ public class MindBoss : Boss
     private void StartIdle()
     {
         _animator.Play("Idle", 0);
-        _animator.Play("Idle", 4);
+        // _animator.Play("Idle", 4);
+        _animator.SetTrigger("Idle");
 
         float wait = Random.Range(minWaitBetweenAttacks, maxWaitBetweenAttacks);
 
         Attack nextAttack = attacks[Random.Range(0, attacks.Length)];
         switch(nextAttack)
         {
-            case Attack.GroundStomp:
-                Invoke(nameof(StartStomps), wait);
-                break;
-            case Attack.TelegraphedHits:
-                Invoke(nameof(StartTelegraphed), wait);
-                break;
-            case Attack.PropWaves:
+            // case Attack.GroundStomp:
+            //     Invoke(nameof(StartStomps), wait);
+            //     break;
+            // case Attack.TelegraphedHits:
+            //     Invoke(nameof(StartTelegraphed), wait);
+            //     break;
+            // case Attack.PropWaves:
+            //     Invoke(nameof(StartPropWaves), wait);
+            //     break;
+            // case Attack.TentacleFrenzy:
+            //     Invoke(nameof(StartTentacleFrenzy), wait);
+            //     break;
+
+            default:
                 Invoke(nameof(StartPropWaves), wait);
-                break;
-            case Attack.TentacleFrenzy:
-                Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
         }
     }
@@ -259,9 +268,16 @@ public class MindBoss : Boss
         waveCounter = 0;
         waveLimit = Random.Range(minWaves, maxWaves + 1);
 
-        InvokeRepeating(nameof(SpawnWave), 0f, propSpawnInterval);
-        _animator.Play("Prop Waves", 4);
+        OnPropWavesPreparation?.Invoke();
+        InvokeRepeating(nameof(SpawnWave), 0.5f, propSpawnInterval);
+        Invoke(nameof(PlayPropWavesAnimation), 0.5f);
         _animator.Play("Attack", 0);
+    }
+
+    private void PlayPropWavesAnimation()
+    {
+        _animator.Play("Prop Waves", 4);
+        OnPropWavesStart?.Invoke();
     }
 
     private void SpawnTentacle()

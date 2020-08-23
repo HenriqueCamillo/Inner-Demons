@@ -76,13 +76,11 @@ public class PowerGaugeManager : MonoBehaviour
     {
         if (powerType == Power.Type.Body)
         {
-            Debug.Log("Used body power");
             BodyPower = 0f;
             OnBodyPowerUsed?.Invoke();
         }
         else if (powerType == Power.Type.Mind)
         {
-            Debug.Log("Used mind power");
             MindPower = 0f;
             OnMindPowerUsed?.Invoke();
         }
