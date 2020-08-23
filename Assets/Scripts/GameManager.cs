@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     public bool isPaused;
     private bool timerEnabled = true;
+    [SerializeField] GameObject endGameScreen;
+    [SerializeField] TextMeshProUGUI endTimer;
+    [SerializeField] TextMeshProUGUI title;
 
     public float TimeRemaining
     {
@@ -38,6 +41,7 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
 
         TimeRemaining = crisisDuration;
+        endGameScreen.SetActive(false);
         // pauseMenu.SetActive(false);
     }
 
@@ -65,6 +69,9 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        endTimer.text = timer.text;
+        title.text = "Voce nao resistiu a crise";
+        endGameScreen.SetActive(true);
         Debug.Log("Game over");
         // SceneManager.LoadScene(0);
     }
@@ -81,6 +88,8 @@ public class GameManager : MonoBehaviour
 
     private void OvercameCrisis()
     {
-        Debug.Log("Congratulations, you have overcome your crisis");
+        endTimer.text = timer.text;
+        title.text = "Voce resistiu a crise";
+        endGameScreen.SetActive(true);
     }
 }
