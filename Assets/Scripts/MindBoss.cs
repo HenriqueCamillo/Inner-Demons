@@ -132,19 +132,18 @@ public class MindBoss : Boss
         Attack nextAttack = attacks[Random.Range(0, attacks.Length)];
         switch(nextAttack)
         {
-            // case Attack.GroundStomp:
-            //     Invoke(nameof(StartStomps), wait);
-            //     break;
-            // case Attack.TelegraphedHits:
-            //     Invoke(nameof(StartTelegraphed), wait);
-            //     break;
-            // case Attack.PropWaves:
-            //     Invoke(nameof(StartPropWaves), wait);
-            //     break;
-            // case Attack.TentacleFrenzy:
-            //     Invoke(nameof(StartTentacleFrenzy), wait);
-            //     break;
-
+            case Attack.GroundStomp:
+                Invoke(nameof(StartStomps), wait);
+                break;
+            case Attack.TelegraphedHits:
+                Invoke(nameof(StartTelegraphed), wait);
+                break;
+            case Attack.PropWaves:
+                Invoke(nameof(StartPropWaves), wait);
+                break;
+            case Attack.TentacleFrenzy:
+                Invoke(nameof(StartTentacleFrenzy), wait);
+                break;
             default:
                 Invoke(nameof(StartPropWaves), wait);
                 break;
