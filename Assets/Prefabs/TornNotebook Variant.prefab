@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7461979642953273757
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2187498615481142253, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650502728578636950, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6127797538315309533, guid: ad3390a9e770eb24d950c87fd2769f5a, type: 3}
+    - target: {fileID: 8894900853488693288, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8894900853488693289, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}
+      propertyPath: m_Name
+      value: TornNotebook Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b585a007bfc1e1e4ba6cc6ba4c9d859d, type: 3}

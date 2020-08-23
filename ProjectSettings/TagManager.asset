@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Boss
+  - Prop
+  - Parryable Prop
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -13,13 +17,13 @@ TagManager:
   - UI
   - 
   - 
-  - Parryable
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Projectile
+  - Prop
+  - Boss
+  - Parryable Prop
+  - Reflector
+  - Player
+  - Killzone
   - 
   - 
   - 
