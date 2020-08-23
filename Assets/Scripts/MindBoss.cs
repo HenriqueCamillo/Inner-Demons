@@ -87,7 +87,6 @@ public class MindBoss : Boss
         }
     }
 
-
     public void LeftStomp()
     {
         Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, spawnsParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
@@ -134,18 +133,18 @@ public class MindBoss : Boss
         Debug.Log("Next attack: " + nextAttack);
         switch(nextAttack)
         {
-            case Attack.GroundStomp:
-                Invoke(nameof(StartStomps), wait);
-                break;
-            case Attack.TelegraphedHits:
-                Invoke(nameof(StartTelegraphed), wait);
-                break;
-            case Attack.PropWaves:
-                Invoke(nameof(StartPropWaves), wait);
-                break;
-            case Attack.TentacleFrenzy:
-                Invoke(nameof(StartTentacleFrenzy), wait);
-                break;
+            // case Attack.GroundStomp:
+            //     Invoke(nameof(StartStomps), wait);
+            //     break;
+            // case Attack.TelegraphedHits:
+            //     Invoke(nameof(StartTelegraphed), wait);
+            //     break;
+            // case Attack.PropWaves:
+            //     Invoke(nameof(StartPropWaves), wait);
+            //     break;
+            // case Attack.TentacleFrenzy:
+            //     Invoke(nameof(StartTentacleFrenzy), wait);
+            //     break;
             default:
                 Invoke(nameof(StartStomps), wait);
                 break;

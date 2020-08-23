@@ -4,40 +4,49 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 1547484463188978313
-    second: BodyBossAttack_0
+    second: BodyBossAttack0
   - first:
       213: -5761728139121031390
-    second: BodyBossAttack_1
+    second: BodyBossAttack1
   - first:
       213: 3908572606966152658
-    second: BodyBossAttack_2
+    second: BodyBossAttack8
   - first:
       213: -6716602970198751812
-    second: BodyBossAttack_3
+    second: BodyBossAttack2
   - first:
       213: 1042761596818145564
-    second: BodyBossAttack_4
+    second: BodyBossAttack3
   - first:
       213: 7330564214531647610
-    second: BodyBossAttack_5
+    second: BodyBossAttack9
   - first:
       213: -4906344250853605623
-    second: BodyBossAttack_6
+    second: BodyBossAttack4
   - first:
       213: 5507927996099545368
-    second: BodyBossAttack_7
+    second: BodyBossAttack5
   - first:
       213: -521076382863071460
-    second: BodyBossAttack_8
+    second: BodyBossAttack10
   - first:
       213: -3263536177052150538
-    second: BodyBossAttack_9
+    second: BodyBossAttack6
   - first:
       213: 8744537023598872468
-    second: BodyBossAttack_10
+    second: BodyBossAttack7
   - first:
       213: -2411438766041118242
-    second: BodyBossAttack_11
+    second: BodyBossAttack11
+  - first:
+      213: -651336000760518599
+    second: BodyBossAttack0
+  - first:
+      213: 1120608843470977059
+    second: BodyBossAttack1
+  - first:
+      213: 2249248408858162882
+    second: BodyBossAttack8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -149,74 +158,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BodyBossAttack_0
+      name: BodyBossAttack2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 247
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98aa0db9be4c97510800000000000000
-      internalID: 1547484463188978313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BodyBossAttack_1
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 0
-        width: 247
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 227815fc8ca3a00b0800000000000000
-      internalID: -5761728139121031390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BodyBossAttack_2
-      rect:
-        serializedVersion: 2
-        x: 494
-        y: 0
-        width: 247
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2dd3a09d31a0e3630800000000000000
-      internalID: 3908572606966152658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BodyBossAttack_3
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 0
+        y: 364
         width: 247
         height: 182
       alignment: 0
@@ -233,11 +179,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_4
+      name: BodyBossAttack3
       rect:
         serializedVersion: 2
-        x: 988
-        y: 0
+        x: 247
+        y: 364
         width: 247
         height: 182
       alignment: 0
@@ -254,11 +200,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_5
+      name: BodyBossAttack9
       rect:
         serializedVersion: 2
-        x: 1235
-        y: 0
+        x: 494
+        y: 364
         width: 247
         height: 182
       alignment: 0
@@ -275,11 +221,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_6
+      name: BodyBossAttack4
       rect:
         serializedVersion: 2
-        x: 1482
-        y: 0
+        x: 0
+        y: 182
         width: 247
         height: 182
       alignment: 0
@@ -296,11 +242,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_7
+      name: BodyBossAttack5
       rect:
         serializedVersion: 2
-        x: 1729
-        y: 0
+        x: 247
+        y: 182
         width: 247
         height: 182
       alignment: 0
@@ -317,11 +263,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_8
+      name: BodyBossAttack10
       rect:
         serializedVersion: 2
-        x: 1976
-        y: 0
+        x: 494
+        y: 178
         width: 247
         height: 182
       alignment: 0
@@ -338,11 +284,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_9
+      name: BodyBossAttack6
       rect:
         serializedVersion: 2
-        x: 2223
-        y: 0
+        x: 0
+        y: 1
         width: 247
         height: 182
       alignment: 0
@@ -359,11 +305,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_10
+      name: BodyBossAttack7
       rect:
         serializedVersion: 2
-        x: 2470
-        y: 0
+        x: 247
+        y: 1
         width: 247
         height: 182
       alignment: 0
@@ -380,10 +326,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BodyBossAttack_11
+      name: BodyBossAttack11
       rect:
         serializedVersion: 2
-        x: 2717
+        x: 494
         y: 0
         width: 247
         height: 182
@@ -396,6 +342,69 @@ TextureImporter:
       bones: []
       spriteID: ed94388f739d88ed0800000000000000
       internalID: -2411438766041118242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 546
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938ee35bb5df5f6f0800000000000000
+      internalID: -651336000760518599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 546
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328bf3f4ec33d8f00800000000000000
+      internalID: 1120608843470977059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack8
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 546
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c67a95c28fe63f10800000000000000
+      internalID: 2249248408858162882
       vertices: []
       indices: 
       edges: []
