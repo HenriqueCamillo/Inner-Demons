@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1390607554074935646, guid: 509d2d16f4b10594eb1b50e26a58a90f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1390607554074935647, guid: 509d2d16f4b10594eb1b50e26a58a90f, type: 3}
       propertyPath: m_Name
-      value: Toilet
+      value: Toilet Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2762950994069401056, guid: 509d2d16f4b10594eb1b50e26a58a90f, type: 3}
       propertyPath: m_Sprite

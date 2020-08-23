@@ -24,9 +24,6 @@ public class Boss : MonoBehaviour
             nextFill = Mathf.Clamp(value, 0, maxFill);
             CancelInvoke(nameof(SmoothGrow));
             InvokeRepeating(nameof(SmoothGrow), 0f, fillChangeRate);
-
-            if (nextFill == maxFill)
-                GameManager.instance.GameOver();
         }
     }
 
@@ -52,7 +49,11 @@ public class Boss : MonoBehaviour
         currentFill = (int)Mathf.Lerp(previousFill, nextFill, lerpTime);
         _animator.SetFloat("Fill", currentFill / (float)maxFill);
         if(currentFill == nextFill)
+        {
             CancelInvoke(nameof(SmoothGrow));
+            if (currentFill == maxFill)
+                GameManager.instance.GameOver();
+        }
     }
 
     void Grow()
