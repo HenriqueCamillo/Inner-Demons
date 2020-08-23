@@ -135,9 +135,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(Power.Type damageType)
     {
-        if (!isInvincible)
+        if (!isInvincible && damageType == currrentArea && !isTransforming)
         {
             IsReflecting = false;
             IsUsingPower = false;

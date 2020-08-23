@@ -49,7 +49,7 @@ public class Prop : MonoBehaviour
         }
         else if (!reflected && other.CompareTag("Player"))
         {
-            other.GetComponent<Player>().TakeDamage();
+            other.GetComponent<Player>().TakeDamage(powerType);
         }
     }
 }

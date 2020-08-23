@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
 
         TimeRemaining = crisisDuration;
-        pauseMenu.SetActive(false);
+        // pauseMenu.SetActive(false);
     }
 
     void Update()

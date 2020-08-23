@@ -130,6 +130,7 @@ public class MindBoss : Boss
         float wait = Random.Range(minWaitBetweenAttacks, maxWaitBetweenAttacks);
 
         Attack nextAttack = attacks[Random.Range(0, attacks.Length)];
+        Debug.Log("Next attack: " + nextAttack);
         switch(nextAttack)
         {
             case Attack.GroundStomp:

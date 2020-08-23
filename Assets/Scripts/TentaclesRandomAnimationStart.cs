@@ -7,7 +7,7 @@ public class TentaclesRandomAnimationStart : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] MindBoss boss;
 
-    void Start()
+    void Awake()
     {
         if (animator == null)
             animator = GetComponent<Animator>();
