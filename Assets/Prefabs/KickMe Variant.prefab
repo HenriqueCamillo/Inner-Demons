@@ -51,9 +51,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4729815998490941888, guid: d9f95a1355f5d3c4fa103725ebfbc727, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4729815998490941889, guid: d9f95a1355f5d3c4fa103725ebfbc727, type: 3}
       propertyPath: m_Name
-      value: KickMe
+      value: KickMe Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8410536002720773502, guid: d9f95a1355f5d3c4fa103725ebfbc727, type: 3}
       propertyPath: m_Sprite
