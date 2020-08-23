@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class MindBoss : Boss
 {
+    public event System.Action OnPropWavesPreparation;
+    public event System.Action OnPropWavesStart;
+    public event System.Action OnPropWavesEnd;
+
     [Header("General")]
     [SerializeField] float minWaitBetweenAttacks;
     [SerializeField] float maxWaitBetweenAttacks;
@@ -56,6 +60,7 @@ public class MindBoss : Boss
             waveCounter = value;
             if(waveCounter >= waveLimit)
             {
+                OnPropWavesEnd?.Invoke();
                 CancelInvoke(nameof(SpawnWave));
                 StartIdle();
             }
@@ -81,8 +86,6 @@ public class MindBoss : Boss
         }
     }
 
-
-    bool isIdle = true;
 
     public void LeftStomp()
     {
@@ -143,7 +146,7 @@ public class MindBoss : Boss
             //     break;
 
             default:
-                Invoke(nameof(StartTentacleFrenzy), wait);
+                Invoke(nameof(StartPropWaves), wait);
                 break;
         }
     }
@@ -265,9 +268,16 @@ public class MindBoss : Boss
         waveCounter = 0;
         waveLimit = Random.Range(minWaves, maxWaves + 1);
 
-        InvokeRepeating(nameof(SpawnWave), 0f, propSpawnInterval);
-        _animator.Play("Prop Waves", 4);
+        OnPropWavesPreparation?.Invoke();
+        InvokeRepeating(nameof(SpawnWave), 0.5f, propSpawnInterval);
+        Invoke(nameof(PlayPropWavesAnimation), 0.5f);
         _animator.Play("Attack", 0);
+    }
+
+    private void PlayPropWavesAnimation()
+    {
+        _animator.Play("Prop Waves", 4);
+        OnPropWavesStart?.Invoke();
     }
 
     private void SpawnTentacle()
