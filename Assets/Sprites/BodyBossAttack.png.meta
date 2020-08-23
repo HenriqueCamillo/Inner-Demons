@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 553b9a489be70524b8f0a4dc9e738dd7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1547484463188978313
+    second: BodyBossAttack_0
+  - first:
+      213: -5761728139121031390
+    second: BodyBossAttack_1
+  - first:
+      213: 3908572606966152658
+    second: BodyBossAttack_2
+  - first:
+      213: -6716602970198751812
+    second: BodyBossAttack_3
+  - first:
+      213: 1042761596818145564
+    second: BodyBossAttack_4
+  - first:
+      213: 7330564214531647610
+    second: BodyBossAttack_5
+  - first:
+      213: -4906344250853605623
+    second: BodyBossAttack_6
+  - first:
+      213: 5507927996099545368
+    second: BodyBossAttack_7
+  - first:
+      213: -521076382863071460
+    second: BodyBossAttack_8
+  - first:
+      213: -3263536177052150538
+    second: BodyBossAttack_9
+  - first:
+      213: 8744537023598872468
+    second: BodyBossAttack_10
+  - first:
+      213: -2411438766041118242
+    second: BodyBossAttack_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +68,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +77,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,9 +109,297 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BodyBossAttack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98aa0db9be4c97510800000000000000
+      internalID: 1547484463188978313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227815fc8ca3a00b0800000000000000
+      internalID: -5761728139121031390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd3a09d31a0e3630800000000000000
+      internalID: 3908572606966152658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_3
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb548f74f25d9c2a0800000000000000
+      internalID: -6716602970198751812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_4
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11c3c3c522a87e00800000000000000
+      internalID: 1042761596818145564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_5
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78695a60556bb560800000000000000
+      internalID: 7330564214531647610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_6
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f371616e929ebb0800000000000000
+      internalID: -4906344250853605623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_7
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81941f78457107c40800000000000000
+      internalID: 5507927996099545368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_8
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17e9926ac3c4c8f0800000000000000
+      internalID: -521076382863071460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_9
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f49b2f432795b2d0800000000000000
+      internalID: -3263536177052150538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_10
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497ccd8a716da5970800000000000000
+      internalID: 8744537023598872468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BodyBossAttack_11
+      rect:
+        serializedVersion: 2
+        x: 2717
+        y: 0
+        width: 247
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed94388f739d88ed0800000000000000
+      internalID: -2411438766041118242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
