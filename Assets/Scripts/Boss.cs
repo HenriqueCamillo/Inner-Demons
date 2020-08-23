@@ -64,6 +64,7 @@ public class Boss : MonoBehaviour
 
     public void HitGrow()    
     {
+        Debug.Log("HIt");
         NextFill += BossesManager.instance.hitGrowth;
     }
 

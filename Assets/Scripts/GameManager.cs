@@ -78,10 +78,8 @@ public class GameManager : MonoBehaviour
         timerEnabled = false;
         endTimer.text = timer.text;
         tentacles.SetActive(true);
-        title.text = "Você não resistiu à crise";
+        title.text = "Voce nao resistiu a crise";
         endGameScreen.SetActive(true);
-        Debug.Log("Game over");
-        // SceneManager.LoadScene(0);
     }
 
     public void BackToMenu()
@@ -97,7 +95,7 @@ public class GameManager : MonoBehaviour
     private void OvercameCrisis()
     {
         endTimer.text = timer.text;
-        title.text = "Você resistiu à crise";
+        title.text = "Voce resistiu a crise";
         tentacles.SetActive(false);
         endGameScreen.SetActive(true);
         OnVictory?.Invoke();

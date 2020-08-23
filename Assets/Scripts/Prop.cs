@@ -6,7 +6,7 @@ public class Prop : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rBody;
     [SerializeField] Power.Type powerType;
-    private Throwable.Type throwableType = Throwable.Type.Projectile;
+    private Throwable.Type throwableType = Throwable.Type.Prop;
     private bool reflected = false;
 
     void OnEnable()

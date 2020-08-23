@@ -156,21 +156,21 @@ public class MindBoss : Boss
         float wait = Random.Range(minWaitBetweenAttacks, maxWaitBetweenAttacks);
 
         Attack nextAttack = attacks[Random.Range(0, attacks.Length)];
-        Debug.Log("Next attack: " + nextAttack);
+        // Debug.Log("Next attack: " + nextAttack);
         switch(nextAttack)
         {
-            // case Attack.GroundStomp:
-            //     Invoke(nameof(StartStomps), wait);
-            //     break;
-            // case Attack.TelegraphedHits:
-            //     Invoke(nameof(StartTelegraphed), wait);
-            //     break;
+            case Attack.GroundStomp:
+                Invoke(nameof(StartStomps), wait);
+                break;
+            case Attack.TelegraphedHits:
+                Invoke(nameof(StartTelegraphed), wait);
+                break;
             case Attack.PropWaves:
                 Invoke(nameof(StartPropWaves), wait);
                 break;
-            // case Attack.TentacleFrenzy:
-            //     Invoke(nameof(StartTentacleFrenzy), wait);
-            //     break;
+            case Attack.TentacleFrenzy:
+                Invoke(nameof(StartTentacleFrenzy), wait);
+                break;
             default:
                 Invoke(nameof(StartStomps), wait);
                 break;
