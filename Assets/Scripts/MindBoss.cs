@@ -106,6 +106,31 @@ public class MindBoss : Boss
         areas = new Area[3] {Area.Top, Area.Center, Area.Bottom};
     }
 
+    private void OnEnable()
+    {
+        // GameManager.OnDeath   += Swallow;
+        GameManager.OnVictory += GoAway;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.OnVictory -= GoAway;
+    }
+
+    private void GoAway()
+    {
+        CancelInvoke();
+        _animator.Play("Idle", 4);
+        _animator.SetTrigger("GoAway");
+    }
+
+    // private void Swallow()
+    // {
+    //     CancelInvoke();
+    //     _animator.Play("Idle", 4);
+    //     _animator.SetTrigger("Swallow");
+    // }
+
     protected override void Start()
     {
         base.Start();
@@ -134,20 +159,20 @@ public class MindBoss : Boss
         Debug.Log("Next attack: " + nextAttack);
         switch(nextAttack)
         {
-            case Attack.GroundStomp:
-                Invoke(nameof(StartStomps), wait);
-                break;
-            case Attack.TelegraphedHits:
-                Invoke(nameof(StartTelegraphed), wait);
-                break;
+            // case Attack.GroundStomp:
+            //     Invoke(nameof(StartStomps), wait);
+            //     break;
+            // case Attack.TelegraphedHits:
+            //     Invoke(nameof(StartTelegraphed), wait);
+            //     break;
             case Attack.PropWaves:
                 Invoke(nameof(StartPropWaves), wait);
                 break;
-            case Attack.TentacleFrenzy:
-                Invoke(nameof(StartTentacleFrenzy), wait);
-                break;
+            // case Attack.TentacleFrenzy:
+            //     Invoke(nameof(StartTentacleFrenzy), wait);
+            //     break;
             default:
-                Invoke(nameof(StartTentacleFrenzy), wait);
+                Invoke(nameof(StartStomps), wait);
                 break;
         }
     }
