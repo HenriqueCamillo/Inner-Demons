@@ -47,11 +47,11 @@ Material:
     - OutlineEnabled: 0
     - _EnableExternalAlpha: 0
     - _OutlineEnabled: 0
-    - _OutlineThickness: 1
+    - _OutlineThickness: 0.8
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 1, g: 0.8744186, b: 0, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SpriteColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpriteColor: {r: 1, g: 0.9877936, b: 0.8915094, a: 1}
   m_BuildTextureStacks: []
