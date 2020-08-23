@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Convert = System.Convert;
 
 public class MindBoss : Boss
 {
@@ -256,9 +257,8 @@ public class MindBoss : Boss
 
         spawnedProps[newParryableIndex].layer = LayerMask.NameToLayer("Parryable Prop");
         spawnedProps[newParryableIndex].tag = "Parryable Prop";
-        //!! TEMP
+        spawnedProps[newParryableIndex].GetComponent<SpriteRenderer>().material.SetFloat("_OutlineEnabled", (float)Convert.ToDouble(true));
         spawnedProps[newParryableIndex].GetComponent<SpriteRenderer>().color = Color.yellow;
-
         lastParryableIndex = newParryableIndex;
         WaveCounter++;
     }

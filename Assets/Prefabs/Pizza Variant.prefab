@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6444204205963031032, guid: a09bdbb758cc2cb4bab15c0c78ba16f0, type: 3}
       propertyPath: m_Name
-      value: Pizza
+      value: Pizza Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7815433020810992967, guid: a09bdbb758cc2cb4bab15c0c78ba16f0, type: 3}
       propertyPath: m_Sprite
