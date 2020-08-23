@@ -69,6 +69,11 @@ public class GameManager : MonoBehaviour
         // SceneManager.LoadScene(0);
     }
 
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     private void OvercameCrisis()
     {
         Debug.Log("Congratulations, you have overcome your crisis");
