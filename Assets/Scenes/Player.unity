@@ -765,7 +765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crysisDuration: 60
   timer: {fileID: 37392537}
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 535004287}
   isPaused: 0
 --- !u!1 &895954543
 GameObject:

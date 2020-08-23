@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
 
         TimeRemaining = crysisDuration;
+        pauseMenu.SetActive(false);
     }
 
     void Update()
