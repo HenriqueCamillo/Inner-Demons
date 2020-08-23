@@ -970,8 +970,8 @@ MonoBehaviour:
   - {x: 1.2005229, y: 1.2144197, z: 0}
   - {x: -1.2144176, y: 1.2144198, z: 0}
   m_ShapePathHash: 20117894
-  m_Mesh: {fileID: 1747527087}
-  m_InstanceId: 242618
+  m_Mesh: {fileID: 1719236106}
+  m_InstanceId: 264912
 --- !u!61 &895954549
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1421,7 +1421,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
   m_PrefabInstance: {fileID: 5478725425083098439}
   m_PrefabAsset: {fileID: 0}
---- !u!43 &1747527087
+--- !u!43 &1719236106
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2284,9 +2284,17 @@ PrefabInstance:
       propertyPath: tentaclePrefab
       value: 
       objectReference: {fileID: 8260986387285543116, guid: 0b9c1e4dcb2944041917dc53a6cf93b5, type: 3}
+    - target: {fileID: 7140683007980186306, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 895954545}
     - target: {fileID: 7140683007980186310, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_Name
       value: BodyBoss(left)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140683007980186310, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7287145236266064152, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_TagString
@@ -2397,6 +2405,10 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5478725426677889360, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: center
+      value: 
+      objectReference: {fileID: 895954545}
     - target: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

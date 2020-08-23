@@ -110,7 +110,7 @@ public class MindBoss : Boss
     {
         base.Start();
         float waitTime = Random.Range(0f, 1.5f);
-        Invoke(nameof(StartIdle), waitTime);
+        StartIdle();
         _animator.ResetTrigger("Idle");
     }
 
@@ -285,6 +285,16 @@ public class MindBoss : Boss
     {
         if(BossesManager.instance.player.currrentArea == area)
             Instantiate(tentaclePrefab, BossesManager.instance.player.transform.position + Vector3.down * tentacleOffset, Quaternion.identity, spawnsParent);
+        else
+        {
+            Vector3 spawnPos;
+            if (Power.Type.Body == area)
+                spawnPos = new Vector2(Random.Range(topSpawnMapLimit.position.x, center.position.x), Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.y));
+            else
+                spawnPos = new Vector2(Random.Range(center.position.x, topSpawnMapLimit.position.x), Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.y));
+            Instantiate(tentaclePrefab, spawnPos, Quaternion.identity, spawnsParent);
+        }
+
         
         TentacleCounter++;
     }
