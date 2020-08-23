@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 714328767023484993}
-  powerType: 0
+  powerType: 1
 --- !u!50 &714328767023484993
 Rigidbody2D:
   serializedVersion: 4

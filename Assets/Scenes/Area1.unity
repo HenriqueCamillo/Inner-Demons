@@ -1724,8 +1724,404 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2067167577}
     m_Modifications:
+    - target: {fileID: 561042196779575055, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 561042197220000027, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 561042197587086549, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 561622006534826256, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 561622006910395614, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 561622007342367434, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 907655033043313900, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 907655033079146786, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 907655033846730550, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
     - target: {fileID: 1324689912121377747, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
       propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379691488421053683, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379691488853041895, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379691489224060713, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549524022552699078, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549524022857002248, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549524023356148508, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610795164812309983, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610795165187749905, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610795165453997003, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684926578534237921, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684926578974613749, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684926579337473339, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230435610245226440, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230435610687902214, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230435611052848146, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950634343051834709, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950634343356135579, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2950634343626478401, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971055125054680899, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971055125321155737, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971055125553760599, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489962352193802272, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489962352692901428, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489962352996809722, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570476963384043858, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570476963621233820, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570476964187423368, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752952703347219336, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752952703980600732, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752952704154579026, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962559977274050458, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962559977582414420, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3962559977848643982, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981868161851426214, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981868162121756284, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981868162627347378, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018497185658616565, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018497186101065531, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018497186465927471, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399376079438182878, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399376079939187728, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399376080205766602, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691794710430862427, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691794710701418369, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691794711131286095, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851253586320638626, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851253586616127340, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851253587123677560, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4925432315565215312, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4925432315592426398, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4925432315862984772, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971584513971804259, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971584514242163641, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971584514278030967, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185924827554236239, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185924827723893377, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185924828357209237, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309063079543563633, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309063079977724095, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309063080243970917, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324889378065687454, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324889378365402704, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324889378631943562, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511713896122375837, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511713896388801863, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5511713896889972873, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605665968292208829, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605665969068115625, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5605665969099656039, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068071220729637001, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068071220761273671, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068071221537243987, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116587043795680593, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116587044061927051, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116587044101823301, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490326897353349405, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490326897582118099, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6490326898156712647, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541436390795098747, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541436391235460207, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541436391598084513, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644114060714386263, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644114061356139843, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6644114061521635469, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059369735390325944, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059369735631544694, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7059369735897860780, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140683007316588612, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140683007605091805, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1188667649
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140683007605091805, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7140683007980186304, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
@@ -1812,6 +2208,74 @@ PrefabInstance:
       propertyPath: m_Name
       value: BodyBoss(left)
       objectReference: {fileID: 0}
+    - target: {fileID: 7287145236266064152, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287145236966489868, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287145237073523394, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309472202150866813, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309472202426595135, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417016083978872952, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417016084245021602, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417016084679347820, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440682980226614102, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440682980935427394, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7440682981029587084, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472890075710182642, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472890076217733862, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7472890076513222440, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_TagString
+      value: Tentacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007039695483506012, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007039695789730632, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8007039696286574214, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c23be8acd86c93444a10e394ccd34ce6, type: 3}
 --- !u!1001 &5478725425083098439
@@ -1821,6 +2285,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2067167577}
     m_Modifications:
+    - target: {fileID: 4615664934395944654, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615664934662337812, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615664935163476186, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359543994924793071, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5359543995710055597, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478725425211337686, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478725426000084559, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1188667649
+      objectReference: {fileID: 0}
+    - target: {fileID: 5478725426000084559, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

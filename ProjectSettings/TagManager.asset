@@ -8,6 +8,7 @@ TagManager:
   - Prop
   - Parryable Prop
   - Projectile
+  - Tentacle
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Boss
+    uniqueID: 3106299647
     locked: 0
