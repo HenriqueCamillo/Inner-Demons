@@ -107,6 +107,7 @@ public class MindBoss : Boss
     {
         base.Start();
         StartIdle();
+        _animator.ResetTrigger("Idle");
     }
 
     private void StartStomps()
@@ -120,23 +121,28 @@ public class MindBoss : Boss
     private void StartIdle()
     {
         _animator.Play("Idle", 0);
-        _animator.Play("Idle", 4);
+        // _animator.Play("Idle", 4);
+        _animator.SetTrigger("Idle");
 
         float wait = Random.Range(minWaitBetweenAttacks, maxWaitBetweenAttacks);
 
         Attack nextAttack = attacks[Random.Range(0, attacks.Length)];
         switch(nextAttack)
         {
-            case Attack.GroundStomp:
-                Invoke(nameof(StartStomps), wait);
-                break;
-            case Attack.TelegraphedHits:
-                Invoke(nameof(StartTelegraphed), wait);
-                break;
-            case Attack.PropWaves:
-                Invoke(nameof(StartPropWaves), wait);
-                break;
-            case Attack.TentacleFrenzy:
+            // case Attack.GroundStomp:
+            //     Invoke(nameof(StartStomps), wait);
+            //     break;
+            // case Attack.TelegraphedHits:
+            //     Invoke(nameof(StartTelegraphed), wait);
+            //     break;
+            // case Attack.PropWaves:
+            //     Invoke(nameof(StartPropWaves), wait);
+            //     break;
+            // case Attack.TentacleFrenzy:
+            //     Invoke(nameof(StartTentacleFrenzy), wait);
+            //     break;
+
+            default:
                 Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
         }

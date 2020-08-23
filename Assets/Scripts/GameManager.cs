@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI timer;
     [SerializeField] GameObject pauseMenu;
     public bool isPaused;
+    private bool timerEnabled = true;
 
     public float TimeRemaining
     {
@@ -22,7 +23,10 @@ public class GameManager : MonoBehaviour
             timer.text = ((int)timeRemaining/60).ToString() + ":" + ((int)timeRemaining%60).ToString().PadLeft(2, '0');
 
             if (timeRemaining == 0)
-                GameOver();
+            {
+                timerEnabled = false;
+                OvercameCrisis();
+            }
         }
     }
 
@@ -44,7 +48,8 @@ public class GameManager : MonoBehaviour
             Pause();
         }
 
-        TimeRemaining -= Time.deltaTime;
+        if (timerEnabled)
+            TimeRemaining -= Time.deltaTime;
     }
 
     public void Pause()
@@ -60,8 +65,12 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        
         Debug.Log("Game over");
         // SceneManager.LoadScene(0);
+    }
+
+    private void OvercameCrisis()
+    {
+        Debug.Log("Congratulations, you have overcome your crisis");
     }
 }
