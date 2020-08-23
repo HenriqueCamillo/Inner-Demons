@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    [SerializeField] float crysisDuration;
+    [SerializeField] float crisisDuration;
     private float timeRemaining;
     [SerializeField] TextMeshProUGUI timer;
     [SerializeField] GameObject pauseMenu;
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
         get => timeRemaining;
         set
         {
-            timeRemaining = Mathf.Clamp(value, 0f, crysisDuration);
+            timeRemaining = Mathf.Clamp(value, 0f, crisisDuration);
             timer.text = ((int)timeRemaining/60).ToString() + ":" + ((int)timeRemaining%60).ToString().PadLeft(2, '0');
 
             if (timeRemaining == 0)
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         else if (instance != this)
             Destroy(this.gameObject);
 
-        TimeRemaining = crysisDuration;
+        TimeRemaining = crisisDuration;
         pauseMenu.SetActive(false);
     }
 
