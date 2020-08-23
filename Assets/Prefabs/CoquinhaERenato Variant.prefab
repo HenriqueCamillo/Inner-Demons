@@ -55,9 +55,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -331856395014614782, guid: 20dd00bd4d20bc54dadc927993cbc5ec, type: 3}
+    - target: {fileID: 5656142580608048182, guid: 868f55dc177d5a744b5f7c7dc0eb2c9a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -18
+      objectReference: {fileID: 0}
     - target: {fileID: 8891566692377276553, guid: 868f55dc177d5a744b5f7c7dc0eb2c9a, type: 3}
       propertyPath: m_Name
-      value: CoquinhaERenato
+      value: CoquinhaERenato Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 868f55dc177d5a744b5f7c7dc0eb2c9a, type: 3}

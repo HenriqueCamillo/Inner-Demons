@@ -87,7 +87,6 @@ public class MindBoss : Boss
         }
     }
 
-
     public void LeftStomp()
     {
         Instantiate(groundStompPrefab, leftHandSpawnOrigin.position, Quaternion.identity, spawnsParent).GetComponent<Rigidbody2D>().velocity = groundStompVelocity;
@@ -147,7 +146,7 @@ public class MindBoss : Boss
                 Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
             default:
-                Invoke(nameof(StartStomps), wait);
+                Invoke(nameof(StartPropWaves), wait);
                 break;
         }
     }
