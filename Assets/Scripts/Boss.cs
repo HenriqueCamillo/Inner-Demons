@@ -13,23 +13,24 @@ public class Boss : MonoBehaviour
 
     protected Animator _animator;
 
-    private int currentFill;
-    private int CurrentFill
+    private int nextFill;
+    private int NextFill
     {
-        get => currentFill;
+        get => nextFill;
         set
         {
+            previousFill = currentFill;
             lerpTime = 0f;
-            currentFill = Mathf.Clamp(value, 0, maxFill);
+            nextFill = Mathf.Clamp(value, 0, maxFill);
             CancelInvoke(nameof(SmoothGrow));
             InvokeRepeating(nameof(SmoothGrow), 0f, fillChangeRate);
 
-            if (currentFill == maxFill)
+            if (nextFill == maxFill)
                 GameManager.instance.GameOver();
         }
     }
 
-    private int previousFill;
+    private int previousFill, currentFill;
 
     private float lerpTime = 0f;
 
@@ -41,44 +42,44 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        previousFill = currentFill;
+        previousFill = nextFill;
         InvokeRepeating(nameof(Grow), 0f, fillGainRate);
     }
 
     void SmoothGrow()
     {
-        previousFill = (int)Mathf.Lerp(previousFill, currentFill, lerpTime);
-        _animator.SetFloat("Fill", previousFill / (float)maxFill);
-        if(previousFill == currentFill)
+        lerpTime += (float)fillChangeSmoothness / Mathf.Abs(nextFill - previousFill);
+        currentFill = (int)Mathf.Lerp(previousFill, nextFill, lerpTime);
+        _animator.SetFloat("Fill", currentFill / (float)maxFill);
+        if(currentFill == nextFill)
             CancelInvoke(nameof(SmoothGrow));
-        lerpTime += (float)fillChangeSmoothness / Mathf.Abs(currentFill - previousFill);
     }
 
     void Grow()
     {
-        CurrentFill += fillGainAmount;
+        NextFill += fillGainAmount;
     }
 
     public void HitGrow()    
     {
-        CurrentFill += BossesManager.instance.hitGrowth;
+        NextFill += BossesManager.instance.hitGrowth;
     }
 
     public void Shrink(Throwable.Type damageType)
     {
-        CurrentFill -= BossesManager.instance.GetDamage(damageType);
+        NextFill -= BossesManager.instance.GetDamage(damageType);
     }
 
     public void SpecialShrink()
     {
-        CurrentFill -= BossesManager.instance.specialDamage;
+        NextFill -= BossesManager.instance.specialDamage;
     }
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.K))
-            CurrentFill -= 5;
+            NextFill -= 5;
         if(Input.GetKeyDown(KeyCode.L))
-            CurrentFill += 5;
+            NextFill += 5;
     }
 }
