@@ -147,7 +147,7 @@ public class MindBoss : Boss
                 Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
             default:
-                Invoke(nameof(StartTentacleFrenzy), wait);
+                Invoke(nameof(StartTelegraphed), wait);
                 break;
         }
     }
@@ -170,7 +170,7 @@ public class MindBoss : Boss
         _animator.Play("Telegraphed Attacks", 4);
         _animator.Play("Attack", 0);
 
-        TelegraphedAttack();
+        Invoke(nameof(TelegraphedAttack), 1.5f);
     }
     private void EndTelegraph()
     {
