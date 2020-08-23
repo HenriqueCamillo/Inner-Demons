@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     private bool isUsingPower;
     private bool isInvincible;
     private bool isTransforming;
+    bool gameEnded = false;
 
     public bool IsInBodyArea
     {
@@ -79,6 +80,18 @@ public class Player : MonoBehaviour
         InvokeRepeating(nameof(Shoot), 0f, shootCooldown);
     }
 
+    void OnEnable()
+    {
+        GameManager.OnVictory += Stop;
+        GameManager.OnDeath   += Stop;
+    }
+
+    void Stop()
+    {
+        gameEnded = true;
+        CancelInvoke();
+    }
+
     void Update()
     {
         movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -89,27 +102,21 @@ public class Player : MonoBehaviour
         else if (IsInBodyArea && this.transform.position.x > centerLine.transform.position.x)
             IsInBodyArea = false;
 
-        // TODO add controller support
-        if (Input.GetKeyDown(KeyCode.Z) && !IsReflecting && !IsUsingPower && !isTransforming)
+        if ((Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.K)) && !IsReflecting && !IsUsingPower && !isTransforming)
         {
             if (!IsInBodyArea && PowerGaugeManager.instance.mindPowerReady)
             {
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Mind);
-                // TODO animation event
-                Invoke(nameof(OnPowerEnd), .5f);
             }
             else if (IsInBodyArea && PowerGaugeManager.instance.bodyPowerReady)
             {
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Body);
-                // TODO animation event
-                Invoke(nameof(OnPowerEnd), .5f);
             }
         }
 
-        // TODO add controller support
-        if (Input.GetKeyDown(KeyCode.X) && !IsReflecting && !IsUsingPower && !isTransforming)
+        if ((Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.J)) && !IsReflecting && !IsUsingPower && !isTransforming)
         {
             IsReflecting = true;
         }
@@ -172,7 +179,8 @@ public class Player : MonoBehaviour
     public void OnTransformEnd()
     {
         isTransforming = false;
-        InvokeRepeating(nameof(Shoot), 0f, shootCooldown);
         sRenderer.flipX = IsInBodyArea;
+        if (!gameEnded)
+            InvokeRepeating(nameof(Shoot), 0f, shootCooldown);
     }
 }

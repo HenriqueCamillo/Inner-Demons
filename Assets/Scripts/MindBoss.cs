@@ -107,9 +107,35 @@ public class MindBoss : Boss
         areas = new Area[3] {Area.Top, Area.Center, Area.Bottom};
     }
 
+    private void OnEnable()
+    {
+        // GameManager.OnDeath   += Swallow;
+        GameManager.OnVictory += GoAway;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.OnVictory -= GoAway;
+    }
+
+    private void GoAway()
+    {
+        CancelInvoke();
+        _animator.Play("Idle", 4);
+        _animator.SetTrigger("GoAway");
+    }
+
+    // private void Swallow()
+    // {
+    //     CancelInvoke();
+    //     _animator.Play("Idle", 4);
+    //     _animator.SetTrigger("Swallow");
+    // }
+
     protected override void Start()
     {
         base.Start();
+        float waitTime = Random.Range(0f, 1.5f);
         StartIdle();
         _animator.ResetTrigger("Idle");
     }
@@ -131,7 +157,7 @@ public class MindBoss : Boss
         float wait = Random.Range(minWaitBetweenAttacks, maxWaitBetweenAttacks);
 
         Attack nextAttack = attacks[Random.Range(0, attacks.Length)];
-        Debug.Log("Next attack: " + nextAttack);
+        // Debug.Log("Next attack: " + nextAttack);
         switch(nextAttack)
         {
             case Attack.GroundStomp:
@@ -147,14 +173,14 @@ public class MindBoss : Boss
                 Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
             default:
-                Invoke(nameof(StartPropWaves), wait);
+                Invoke(nameof(StartStomps), wait);
                 break;
         }
     }
 
     private void SpawnProjectile()
     {
-        Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.x));
+        Vector2 spawnPos = new Vector2(topSpawnMapLimit.position.x, Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.y));
         GameObject spawnedProjectile = Instantiate(projectilePrefab, spawnPos, Quaternion.identity, spawnsParent);
         Rigidbody2D projectileRigid = spawnedProjectile.GetComponent<Rigidbody2D>();
 
@@ -284,6 +310,16 @@ public class MindBoss : Boss
     {
         if(BossesManager.instance.player.currrentArea == area)
             Instantiate(tentaclePrefab, BossesManager.instance.player.transform.position + Vector3.down * tentacleOffset, Quaternion.identity, spawnsParent);
+        else
+        {
+            Vector3 spawnPos;
+            if (Power.Type.Body == area)
+                spawnPos = new Vector2(Random.Range(topSpawnMapLimit.position.x, center.position.x), Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.y));
+            else
+                spawnPos = new Vector2(Random.Range(center.position.x, topSpawnMapLimit.position.x), Random.Range(bottomSpawnMapLimit.position.y, topSpawnMapLimit.position.y));
+            Instantiate(tentaclePrefab, spawnPos, Quaternion.identity, spawnsParent);
+        }
+
         
         TentacleCounter++;
     }

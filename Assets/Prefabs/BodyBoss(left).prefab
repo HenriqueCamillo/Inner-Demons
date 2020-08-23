@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 7262099413560642937}
   - component: {fileID: 2419786425737457455}
   m_Layer: 9
-  m_Name: Tentacle (2)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3515222297101159354}
-  powerType: 0
+  powerType: 1
 --- !u!95 &2419786425737457455
 Animator:
   serializedVersion: 3
@@ -157,7 +157,7 @@ Animator:
   m_GameObject: {fileID: 561042196779575055}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -181,8 +181,8 @@ GameObject:
   - component: {fileID: 7262099412851780461}
   - component: {fileID: 2419786426437863739}
   m_Layer: 9
-  m_Name: Tentacle (2)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,8 +240,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3515222297742929326}
-  powerType: 0
+  powerType: 1
 --- !u!95 &2419786426437863739
 Animator:
   serializedVersion: 3
@@ -323,7 +323,7 @@ Animator:
   m_GameObject: {fileID: 561042197220000027}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -347,8 +347,8 @@ GameObject:
   - component: {fileID: 7262099412757325475}
   - component: {fileID: 2419786426540836085}
   m_Layer: 9
-  m_Name: Tentacle (2)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -406,8 +406,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3515222297904193632}
-  powerType: 0
+  powerType: 1
 --- !u!95 &2419786426540836085
 Animator:
   serializedVersion: 3
@@ -489,7 +489,7 @@ Animator:
   m_GameObject: {fileID: 561042197587086549}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -513,8 +513,8 @@ GameObject:
   - component: {fileID: 7262714287345042278}
   - component: {fileID: 2420330986964607280}
   m_Layer: 9
-  m_Name: Tentacle (4)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -572,8 +572,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3515874060644812197}
-  powerType: 0
+  powerType: 1
 --- !u!95 &2420330986964607280
 Animator:
   serializedVersion: 3
@@ -655,7 +655,7 @@ Animator:
   m_GameObject: {fileID: 561622006534826256}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -679,8 +679,8 @@ GameObject:
   - component: {fileID: 7262714287242104488}
   - component: {fileID: 2420330987059031294}
   m_Layer: 9
-  m_Name: Tentacle (4)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -738,8 +738,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3515874060814633067}
-  powerType: 0
+  powerType: 1
 --- !u!95 &2420330987059031294
 Animator:
   serializedVersion: 3
@@ -821,7 +821,7 @@ Animator:
   m_GameObject: {fileID: 561622006910395614}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -845,8 +845,8 @@ GameObject:
   - component: {fileID: 7262714286541695164}
   - component: {fileID: 2420330987767892714}
   m_Layer: 9
-  m_Name: Tentacle (4)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -904,8 +904,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3515874061447949951}
-  powerType: 0
+  powerType: 1
 --- !u!95 &2420330987767892714
 Animator:
   serializedVersion: 3
@@ -987,7 +987,7 @@ Animator:
   m_GameObject: {fileID: 561622007342367434}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1011,8 +1011,8 @@ GameObject:
   - component: {fileID: 8041655864491478682}
   - component: {fileID: 3081963499363888332}
   m_Layer: 9
-  m_Name: Tentacle (6)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1070,8 +1070,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 4294480866275887193}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3081963499363888332
 Animator:
   serializedVersion: 3
@@ -1153,7 +1153,7 @@ Animator:
   m_GameObject: {fileID: 907655033043313900}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1177,8 +1177,8 @@ GameObject:
   - component: {fileID: 8041655864183014228}
   - component: {fileID: 3081963499663827202}
   m_Layer: 9
-  m_Name: Tentacle (6)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1236,8 +1236,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1308,7 +1308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 4294480866785445271}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3081963499663827202
 Animator:
   serializedVersion: 3
@@ -1319,7 +1319,7 @@ Animator:
   m_GameObject: {fileID: 907655033079146786}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1343,8 +1343,8 @@ GameObject:
   - component: {fileID: 8041655863683867968}
   - component: {fileID: 3081963500171298582}
   m_Layer: 9
-  m_Name: Tentacle (6)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1402,8 +1402,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 4294480867083281283}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3081963500171298582
 Animator:
   serializedVersion: 3
@@ -1485,7 +1485,7 @@ Animator:
   m_GameObject: {fileID: 907655033846730550}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1509,8 +1509,8 @@ GameObject:
   - component: {fileID: 8080783803680845445}
   - component: {fileID: 3852917517368298707}
   m_Layer: 9
-  m_Name: Tentacle (10)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1568,8 +1568,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2604218512662980678}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3852917517368298707
 Animator:
   serializedVersion: 3
@@ -1651,7 +1651,7 @@ Animator:
   m_GameObject: {fileID: 1379691488421053683}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1675,8 +1675,8 @@ GameObject:
   - component: {fileID: 8080783802980419729}
   - component: {fileID: 3852917518077176519}
   m_Layer: 9
-  m_Name: Tentacle (10)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1734,8 +1734,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1806,7 +1806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2604218513296281170}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3852917518077176519
 Animator:
   serializedVersion: 3
@@ -1817,7 +1817,7 @@ Animator:
   m_GameObject: {fileID: 1379691488853041895}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1841,8 +1841,8 @@ GameObject:
   - component: {fileID: 8080783802873644383}
   - component: {fileID: 3852917518175692553}
   m_Layer: 9
-  m_Name: Tentacle (10)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1900,8 +1900,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1972,7 +1972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2604218513470391196}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3852917518175692553
 Animator:
   serializedVersion: 3
@@ -1983,7 +1983,7 @@ Animator:
   m_GameObject: {fileID: 1379691489224060713}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2007,8 +2007,8 @@ GameObject:
   - component: {fileID: 8538846836229130928}
   - component: {fileID: 3737132181791287526}
   m_Layer: 9
-  m_Name: Tentacle (22)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2066,8 +2066,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2486179453017934963}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3737132181791287526
 Animator:
   serializedVersion: 3
@@ -2149,7 +2149,7 @@ Animator:
   m_GameObject: {fileID: 1549524022552699078}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2173,8 +2173,8 @@ GameObject:
   - component: {fileID: 8538846836189071230}
   - component: {fileID: 3737132181822825768}
   m_Layer: 9
-  m_Name: Tentacle (22)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2232,8 +2232,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2304,7 +2304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2486179453259022781}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3737132181822825768
 Animator:
   serializedVersion: 3
@@ -2315,7 +2315,7 @@ Animator:
   m_GameObject: {fileID: 1549524022857002248}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2339,8 +2339,8 @@ GameObject:
   - component: {fileID: 8538846835421487466}
   - component: {fileID: 3737132182598730556}
   m_Layer: 9
-  m_Name: Tentacle (22)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2398,8 +2398,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2470,7 +2470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2486179453825296297}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3737132182598730556
 Animator:
   serializedVersion: 3
@@ -2481,7 +2481,7 @@ Animator:
   m_GameObject: {fileID: 1549524023356148508}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2505,8 +2505,8 @@ GameObject:
   - component: {fileID: 8456530556079447977}
   - component: {fileID: 3460813607517060607}
   m_Layer: 9
-  m_Name: Tentacle (7)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2564,8 +2564,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2636,7 +2636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2403546998838892906}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3460813607517060607
 Animator:
   serializedVersion: 3
@@ -2647,7 +2647,7 @@ Animator:
   m_GameObject: {fileID: 1610795164812309983}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2671,8 +2671,8 @@ GameObject:
   - component: {fileID: 8456530555976634983}
   - component: {fileID: 3460813607611609137}
   m_Layer: 9
-  m_Name: Tentacle (7)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2730,8 +2730,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2802,7 +2802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2403546999008580772}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3460813607611609137
 Animator:
   serializedVersion: 3
@@ -2813,7 +2813,7 @@ Animator:
   m_GameObject: {fileID: 1610795165187749905}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2837,8 +2837,8 @@ GameObject:
   - component: {fileID: 8456530555706194365}
   - component: {fileID: 3460813607881989099}
   m_Layer: 9
-  m_Name: Tentacle (7)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2896,8 +2896,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2968,7 +2968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2403546999279271806}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3460813607881989099
 Animator:
   serializedVersion: 3
@@ -2979,7 +2979,7 @@ Animator:
   m_GameObject: {fileID: 1610795165453997003}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3003,8 +3003,8 @@ GameObject:
   - component: {fileID: 8386581964034026647}
   - component: {fileID: 3548829647360511681}
   m_Layer: 9
-  m_Name: Tentacle (6)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3062,8 +3062,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3134,7 +3134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2333888398400924244}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3548829647360511681
 Animator:
   serializedVersion: 3
@@ -3145,7 +3145,7 @@ Animator:
   m_GameObject: {fileID: 1684926578534237921}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3169,8 +3169,8 @@ GameObject:
   - component: {fileID: 8386581963325213315}
   - component: {fileID: 3548829648060999893}
   m_Layer: 9
-  m_Name: Tentacle (6)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3228,8 +3228,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3300,7 +3300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2333888399042612288}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3548829648060999893
 Animator:
   serializedVersion: 3
@@ -3311,7 +3311,7 @@ Animator:
   m_GameObject: {fileID: 1684926578974613749}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3335,8 +3335,8 @@ GameObject:
   - component: {fileID: 8386581963226597197}
   - component: {fileID: 3548829648168133915}
   m_Layer: 9
-  m_Name: Tentacle (6)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3394,8 +3394,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3466,7 +3466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2333888399208104334}
-  powerType: 0
+  powerType: 1
 --- !u!95 &3548829648168133915
 Animator:
   serializedVersion: 3
@@ -3477,7 +3477,7 @@ Animator:
   m_GameObject: {fileID: 1684926579337473339}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3501,8 +3501,8 @@ GameObject:
   - component: {fileID: 9076170836206663102}
   - component: {fileID: 4083057690008737768}
   m_Layer: 9
-  m_Name: Tentacle (27)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3560,8 +3560,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3632,7 +3632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3023522522654978941}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4083057690008737768
 Animator:
   serializedVersion: 3
@@ -3643,7 +3643,7 @@ Animator:
   m_GameObject: {fileID: 2230435610245226440}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3667,8 +3667,8 @@ GameObject:
   - component: {fileID: 9076170836036614256}
   - component: {fileID: 4083057690170268198}
   m_Layer: 9
-  m_Name: Tentacle (27)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3726,8 +3726,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3798,7 +3798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3023522522757693107}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4083057690170268198
 Animator:
   serializedVersion: 3
@@ -3809,7 +3809,7 @@ Animator:
   m_GameObject: {fileID: 2230435610687902214}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3833,8 +3833,8 @@ GameObject:
   - component: {fileID: 9076170835403234916}
   - component: {fileID: 4083057690811972658}
   m_Layer: 9
-  m_Name: Tentacle (27)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3892,8 +3892,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3964,7 +3964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 3023522523458164903}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4083057690811972658
 Animator:
   serializedVersion: 3
@@ -3975,7 +3975,7 @@ Animator:
   m_GameObject: {fileID: 2230435611052848146}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3999,8 +3999,8 @@ GameObject:
   - component: {fileID: 5472949256987598627}
   - component: {fileID: 1058121910808067445}
   m_Layer: 9
-  m_Name: Tentacle (3)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4058,8 +4058,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4130,7 +4130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2302305487479003616}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1058121910808067445
 Animator:
   serializedVersion: 3
@@ -4141,7 +4141,7 @@ Animator:
   m_GameObject: {fileID: 2950634343051834709}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4165,8 +4165,8 @@ GameObject:
   - component: {fileID: 5472949256947536621}
   - component: {fileID: 1058121910839603387}
   m_Layer: 9
-  m_Name: Tentacle (3)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4224,8 +4224,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4296,7 +4296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2302305487720092718}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1058121910839603387
 Animator:
   serializedVersion: 3
@@ -4307,7 +4307,7 @@ Animator:
   m_GameObject: {fileID: 2950634343356135579}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4331,8 +4331,8 @@ GameObject:
   - component: {fileID: 5472949256681388343}
   - component: {fileID: 1058121911105821537}
   m_Layer: 9
-  m_Name: Tentacle (3)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4390,8 +4390,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4462,7 +4462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2302305487986556916}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1058121911105821537
 Animator:
   serializedVersion: 3
@@ -4473,7 +4473,7 @@ Animator:
   m_GameObject: {fileID: 2950634343626478401}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4497,8 +4497,8 @@ GameObject:
   - component: {fileID: 5348691902796072245}
   - component: {fileID: 1109777689756395363}
   m_Layer: 9
-  m_Name: Tentacle (15)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4556,8 +4556,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4628,7 +4628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2178301914558399478}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1109777689756395363
 Animator:
   serializedVersion: 3
@@ -4639,7 +4639,7 @@ Animator:
   m_GameObject: {fileID: 2971055125054680899}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4663,8 +4663,8 @@ GameObject:
   - component: {fileID: 5348691902525402863}
   - component: {fileID: 1109777690027003065}
   m_Layer: 9
-  m_Name: Tentacle (15)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4722,8 +4722,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4794,7 +4794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2178301914828859436}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1109777690027003065
 Animator:
   serializedVersion: 3
@@ -4805,7 +4805,7 @@ Animator:
   m_GameObject: {fileID: 2971055125321155737}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4829,8 +4829,8 @@ GameObject:
   - component: {fileID: 5348691902028555041}
   - component: {fileID: 1109777690532364663}
   m_Layer: 9
-  m_Name: Tentacle (15)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4888,8 +4888,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4960,7 +4960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 2178301915124606434}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1109777690532364663
 Animator:
   serializedVersion: 3
@@ -4971,7 +4971,7 @@ Animator:
   m_GameObject: {fileID: 2971055125553760599}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4995,8 +4995,8 @@ GameObject:
   - component: {fileID: 6012242090537810518}
   - component: {fileID: 1599657803446097920}
   m_Layer: 9
-  m_Name: Tentacle (24)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5054,8 +5054,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5126,7 +5126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 535781764259249301}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1599657803446097920
 Animator:
   serializedVersion: 3
@@ -5137,7 +5137,7 @@ Animator:
   m_GameObject: {fileID: 3489962352193802272}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5161,8 +5161,8 @@ GameObject:
   - component: {fileID: 6012242089770277954}
   - component: {fileID: 1599657804222086676}
   m_Layer: 9
-  m_Name: Tentacle (24)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5220,8 +5220,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5292,7 +5292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 535781764825438849}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1599657804222086676
 Animator:
   serializedVersion: 3
@@ -5303,7 +5303,7 @@ Animator:
   m_GameObject: {fileID: 3489962352692901428}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5327,8 +5327,8 @@ GameObject:
   - component: {fileID: 6012242089730609548}
   - component: {fileID: 1599657804253492186}
   m_Layer: 9
-  m_Name: Tentacle (24)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5386,8 +5386,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5458,7 +5458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 535781765066659663}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1599657804253492186
 Animator:
   serializedVersion: 3
@@ -5469,7 +5469,7 @@ Animator:
   m_GameObject: {fileID: 3489962352996809722}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5493,8 +5493,8 @@ GameObject:
   - component: {fileID: 5948676725967635236}
   - component: {fileID: 1716179223578747250}
   m_Layer: 9
-  m_Name: Tentacle (4)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5552,8 +5552,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5624,7 +5624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 472118233890735591}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1716179223578747250
 Animator:
   serializedVersion: 3
@@ -5635,7 +5635,7 @@ Animator:
   m_GameObject: {fileID: 3570476963384043858}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5659,8 +5659,8 @@ GameObject:
   - component: {fileID: 5948676725457817322}
   - component: {fileID: 1716179224080051388}
   m_Layer: 9
-  m_Name: Tentacle (4)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5718,8 +5718,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5790,7 +5790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 472118234198935593}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1716179224080051388
 Animator:
   serializedVersion: 3
@@ -5801,7 +5801,7 @@ Animator:
   m_GameObject: {fileID: 3570476963621233820}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5825,8 +5825,8 @@ GameObject:
   - component: {fileID: 5948676725160061182}
   - component: {fileID: 1716179224386259624}
   m_Layer: 9
-  m_Name: Tentacle (4)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5884,8 +5884,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5956,7 +5956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 472118234698034749}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1716179224386259624
 Animator:
   serializedVersion: 3
@@ -5967,7 +5967,7 @@ Animator:
   m_GameObject: {fileID: 3570476964187423368}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5991,8 +5991,8 @@ GameObject:
   - component: {fileID: 6274704566454694398}
   - component: {fileID: 1317545407621092264}
   m_Layer: 9
-  m_Name: Tentacle (21)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6050,8 +6050,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6122,7 +6122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 221950098515965757}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1317545407621092264
 Animator:
   serializedVersion: 3
@@ -6133,7 +6133,7 @@ Animator:
   m_GameObject: {fileID: 3752952703347219336}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6157,8 +6157,8 @@ GameObject:
   - component: {fileID: 6274704566089750506}
   - component: {fileID: 1317545407994361276}
   m_Layer: 9
-  m_Name: Tentacle (21)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6216,8 +6216,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6288,7 +6288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 221950098948002089}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1317545407994361276
 Animator:
   serializedVersion: 3
@@ -6299,7 +6299,7 @@ Animator:
   m_GameObject: {fileID: 3752952703980600732}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6323,8 +6323,8 @@ GameObject:
   - component: {fileID: 6274704565651528228}
   - component: {fileID: 1317545408424065138}
   m_Layer: 9
-  m_Name: Tentacle (21)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6382,8 +6382,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6454,7 +6454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 221950099319413991}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1317545408424065138
 Animator:
   serializedVersion: 3
@@ -6465,7 +6465,7 @@ Animator:
   m_GameObject: {fileID: 3752952704154579026}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6519,8 +6519,8 @@ GameObject:
   - component: {fileID: 6196046374321941996}
   - component: {fileID: 1197994088900595642}
   m_Layer: 9
-  m_Name: Tentacle (13)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6578,8 +6578,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6650,7 +6650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 143125248725478191}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1197994088900595642
 Animator:
   serializedVersion: 3
@@ -6661,7 +6661,7 @@ Animator:
   m_GameObject: {fileID: 3962559977274050458}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6685,8 +6685,8 @@ GameObject:
   - component: {fileID: 6196046374286204962}
   - component: {fileID: 1197994088928068212}
   m_Layer: 9
-  m_Name: Tentacle (13)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6744,8 +6744,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6816,7 +6816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 143125248962242273}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1197994088928068212
 Animator:
   serializedVersion: 3
@@ -6827,7 +6827,7 @@ Animator:
   m_GameObject: {fileID: 3962559977582414420}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6851,8 +6851,8 @@ GameObject:
   - component: {fileID: 6196046374015781880}
   - component: {fileID: 1197994089198430638}
   m_Layer: 9
-  m_Name: Tentacle (13)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6910,8 +6910,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6982,7 +6982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 143125249232948539}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1197994089198430638
 Animator:
   serializedVersion: 3
@@ -6993,7 +6993,7 @@ Animator:
   m_GameObject: {fileID: 3962559977848643982}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7017,8 +7017,8 @@ GameObject:
   - component: {fileID: 6071837358750199760}
   - component: {fileID: 1233874112699305350}
   m_Layer: 9
-  m_Name: Tentacle (12)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7076,8 +7076,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7148,7 +7148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 19073326448503059}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1233874112699305350
 Animator:
   serializedVersion: 3
@@ -7159,7 +7159,7 @@ Animator:
   m_GameObject: {fileID: 3981868161851426214}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7183,8 +7183,8 @@ GameObject:
   - component: {fileID: 6071837358484063242}
   - component: {fileID: 1233874112965633628}
   m_Layer: 9
-  m_Name: Tentacle (12)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7242,8 +7242,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7314,7 +7314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 19073326714847945}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1233874112965633628
 Animator:
   serializedVersion: 3
@@ -7325,7 +7325,7 @@ Animator:
   m_GameObject: {fileID: 3981868162121756284}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7349,8 +7349,8 @@ GameObject:
   - component: {fileID: 6071837358242712004}
   - component: {fileID: 1233874113198467986}
   m_Layer: 9
-  m_Name: Tentacle (12)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7408,8 +7408,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7480,7 +7480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 19073326754647815}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1233874113198467986
 Animator:
   serializedVersion: 3
@@ -7491,7 +7491,7 @@ Animator:
   m_GameObject: {fileID: 3981868162627347378}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7515,8 +7515,8 @@ GameObject:
   - component: {fileID: 6108431342586908803}
   - component: {fileID: 1268159044321751765}
   m_Layer: 9
-  m_Name: Tentacle (2)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7574,8 +7574,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7646,7 +7646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 55517707397027392}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1268159044321751765
 Animator:
   serializedVersion: 3
@@ -7657,7 +7657,7 @@ Animator:
   m_GameObject: {fileID: 4018497185658616565}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7681,8 +7681,8 @@ GameObject:
   - component: {fileID: 6108431342417091917}
   - component: {fileID: 1268159044483055387}
   m_Layer: 9
-  m_Name: Tentacle (2)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7740,8 +7740,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7812,7 +7812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 55517707499969422}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1268159044483055387
 Animator:
   serializedVersion: 3
@@ -7823,7 +7823,7 @@ Animator:
   m_GameObject: {fileID: 4018497186101065531}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7847,8 +7847,8 @@ GameObject:
   - component: {fileID: 6108431341783792473}
   - component: {fileID: 1268159045124806927}
   m_Layer: 9
-  m_Name: Tentacle (2)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7906,8 +7906,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7978,7 +7978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 55517708200394138}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1268159045124806927
 Animator:
   serializedVersion: 3
@@ -7989,7 +7989,7 @@ Animator:
   m_GameObject: {fileID: 4018497186465927471}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8013,8 +8013,8 @@ GameObject:
   - component: {fileID: 6776977542366925736}
   - component: {fileID: 1968160124219093502}
   m_Layer: 9
-  m_Name: Tentacle (8)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8072,8 +8072,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8144,7 +8144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 723977647061800299}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1968160124219093502
 Animator:
   serializedVersion: 3
@@ -8155,7 +8155,7 @@ Animator:
   m_GameObject: {fileID: 4399376079438182878}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8179,8 +8179,8 @@ GameObject:
   - component: {fileID: 6776977542138551910}
   - component: {fileID: 1968160124455992368}
   m_Layer: 9
-  m_Name: Tentacle (8)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8238,8 +8238,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8310,7 +8310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 723977647089146021}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1968160124455992368
 Animator:
   serializedVersion: 3
@@ -8321,7 +8321,7 @@ Animator:
   m_GameObject: {fileID: 4399376079939187728}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8345,8 +8345,8 @@ GameObject:
   - component: {fileID: 6776977541867779516}
   - component: {fileID: 1968160124726564842}
   m_Layer: 9
-  m_Name: Tentacle (8)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8404,8 +8404,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8476,7 +8476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 723977647359636351}
-  powerType: 0
+  powerType: 1
 --- !u!95 &1968160124726564842
 Animator:
   serializedVersion: 3
@@ -8487,7 +8487,7 @@ Animator:
   m_GameObject: {fileID: 4399376080205766602}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8511,8 +8511,8 @@ GameObject:
   - component: {fileID: 2458273224540956205}
   - component: {fileID: 7440347247337817211}
   m_Layer: 9
-  m_Name: Tentacle (9)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8570,8 +8570,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8642,7 +8642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8511018826873938158}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7440347247337817211
 Animator:
   serializedVersion: 3
@@ -8653,7 +8653,7 @@ Animator:
   m_GameObject: {fileID: 4691794710430862427}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8677,8 +8677,8 @@ GameObject:
   - component: {fileID: 2458273224274595319}
   - component: {fileID: 7440347247604379553}
   m_Layer: 9
-  m_Name: Tentacle (9)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8736,8 +8736,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8808,7 +8808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8511018827140057908}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7440347247604379553
 Animator:
   serializedVersion: 3
@@ -8819,7 +8819,7 @@ Animator:
   m_GameObject: {fileID: 4691794710701418369}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8843,8 +8843,8 @@ GameObject:
   - component: {fileID: 2458273224108965945}
   - component: {fileID: 7440347247778259567}
   m_Layer: 9
-  m_Name: Tentacle (9)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8902,8 +8902,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8974,7 +8974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8511018827238803194}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7440347247778259567
 Animator:
   serializedVersion: 3
@@ -8985,7 +8985,7 @@ Animator:
   m_GameObject: {fileID: 4691794711131286095}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9009,8 +9009,8 @@ GameObject:
   - component: {fileID: 2328938768233179348}
   - component: {fileID: 7282016478584556162}
   m_Layer: 9
-  m_Name: Tentacle (20)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9068,8 +9068,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9140,7 +9140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8381957048959053335}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7282016478584556162
 Animator:
   serializedVersion: 3
@@ -9151,7 +9151,7 @@ Animator:
   m_GameObject: {fileID: 4851253586320638626}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9175,8 +9175,8 @@ GameObject:
   - component: {fileID: 2328938768201934106}
   - component: {fileID: 7282016478624319308}
   m_Layer: 9
-  m_Name: Tentacle (20)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9234,8 +9234,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9306,7 +9306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8381957049191916505}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7282016478624319308
 Animator:
   serializedVersion: 3
@@ -9317,7 +9317,7 @@ Animator:
   m_GameObject: {fileID: 4851253586616127340}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9341,8 +9341,8 @@ GameObject:
   - component: {fileID: 2328938767425946382}
   - component: {fileID: 7282016479391850840}
   m_Layer: 9
-  m_Name: Tentacle (20)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9400,8 +9400,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9472,7 +9472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8381957049766561229}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7282016479391850840
 Animator:
   serializedVersion: 3
@@ -9483,7 +9483,7 @@ Animator:
   m_GameObject: {fileID: 4851253587123677560}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9507,8 +9507,8 @@ GameObject:
   - component: {fileID: 2836061116623840294}
   - component: {fileID: 7063703122225858160}
   m_Layer: 9
-  m_Name: Tentacle (1)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9566,8 +9566,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9638,7 +9638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8312249019842487013}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7063703122225858160
 Animator:
   serializedVersion: 3
@@ -9649,7 +9649,7 @@ Animator:
   m_GameObject: {fileID: 4925432315565215312}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9673,8 +9673,8 @@ GameObject:
   - component: {fileID: 2836061116323998184}
   - component: {fileID: 7063703122533960638}
   m_Layer: 9
-  m_Name: Tentacle (1)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9732,8 +9732,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9804,7 +9804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8312249020343889707}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7063703122533960638
 Animator:
   serializedVersion: 3
@@ -9815,7 +9815,7 @@ Animator:
   m_GameObject: {fileID: 4925432315592426398}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9839,8 +9839,8 @@ GameObject:
   - component: {fileID: 2836061116057633330}
   - component: {fileID: 7063703122800517220}
   m_Layer: 9
-  m_Name: Tentacle (1)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9898,8 +9898,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9970,7 +9970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8312249020610004209}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7063703122800517220
 Animator:
   serializedVersion: 3
@@ -9981,7 +9981,7 @@ Animator:
   m_GameObject: {fileID: 4925432315862984772}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10005,8 +10005,8 @@ GameObject:
   - component: {fileID: 2882178216029106709}
   - component: {fileID: 7107643171969355843}
   m_Layer: 9
-  m_Name: Tentacle (18)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10064,8 +10064,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10136,7 +10136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8358453513775035606}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7107643171969355843
 Animator:
   serializedVersion: 3
@@ -10147,7 +10147,7 @@ Animator:
   m_GameObject: {fileID: 4971584513971804259}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10171,8 +10171,8 @@ GameObject:
   - component: {fileID: 2882178215762942415}
   - component: {fileID: 7107643172235590553}
   m_Layer: 9
-  m_Name: Tentacle (18)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10230,8 +10230,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10302,7 +10302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8358453514041483020}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7107643172235590553
 Animator:
   serializedVersion: 3
@@ -10313,7 +10313,7 @@ Animator:
   m_GameObject: {fileID: 4971584514242163641}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10337,8 +10337,8 @@ GameObject:
   - component: {fileID: 2882178215454446593}
   - component: {fileID: 7107643172535563863}
   m_Layer: 9
-  m_Name: Tentacle (18)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10396,8 +10396,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10468,7 +10468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8358453514551005890}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7107643172535563863
 Animator:
   serializedVersion: 3
@@ -10479,7 +10479,7 @@ Animator:
   m_GameObject: {fileID: 4971584514278030967}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10503,8 +10503,8 @@ GameObject:
   - component: {fileID: 2664172959612546361}
   - component: {fileID: 7036290780085243759}
   m_Layer: 9
-  m_Name: Tentacle (14)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10562,8 +10562,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10634,7 +10634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8140739897981774842}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7036290780085243759
 Animator:
   serializedVersion: 3
@@ -10645,7 +10645,7 @@ Animator:
   m_GameObject: {fileID: 5185924827554236239}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10669,8 +10669,8 @@ GameObject:
   - component: {fileID: 2664172959170257143}
   - component: {fileID: 7036290780519269025}
   m_Layer: 9
-  m_Name: Tentacle (14)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10728,8 +10728,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10800,7 +10800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8140739898357245492}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7036290780519269025
 Animator:
   serializedVersion: 3
@@ -10811,7 +10811,7 @@ Animator:
   m_GameObject: {fileID: 5185924827723893377}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10835,8 +10835,8 @@ GameObject:
   - component: {fileID: 2664172958805378787}
   - component: {fileID: 7036290780892603573}
   m_Layer: 9
-  m_Name: Tentacle (14)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10894,8 +10894,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10966,7 +10966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8140739898789216288}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7036290780892603573
 Animator:
   serializedVersion: 3
@@ -10977,7 +10977,7 @@ Animator:
   m_GameObject: {fileID: 5185924828357209237}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11001,8 +11001,8 @@ GameObject:
   - component: {fileID: 3074978508943003399}
   - component: {fileID: 8066055469853863249}
   m_Layer: 9
-  m_Name: Tentacle (26)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11060,8 +11060,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11132,7 +11132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 9127732494515800516}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8066055469853863249
 Animator:
   serializedVersion: 3
@@ -11143,7 +11143,7 @@ Animator:
   m_GameObject: {fileID: 5309063079543563633}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11167,8 +11167,8 @@ GameObject:
   - component: {fileID: 3074978508781470409}
   - component: {fileID: 8066055470023909535}
   m_Layer: 9
-  m_Name: Tentacle (26)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11226,8 +11226,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11298,7 +11298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 9127732494609990666}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8066055470023909535
 Animator:
   serializedVersion: 3
@@ -11309,7 +11309,7 @@ Animator:
   m_GameObject: {fileID: 5309063079977724095}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11333,8 +11333,8 @@ GameObject:
   - component: {fileID: 3074978508511029523}
   - component: {fileID: 8066055470294289221}
   m_Layer: 9
-  m_Name: Tentacle (26)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11392,8 +11392,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11464,7 +11464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 9127732494880681936}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8066055470294289221
 Animator:
   serializedVersion: 3
@@ -11475,7 +11475,7 @@ Animator:
   m_GameObject: {fileID: 5309063080243970917}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11499,8 +11499,8 @@ GameObject:
   - component: {fileID: 3090840135534430696}
   - component: {fileID: 8050246617639594942}
   m_Layer: 9
-  m_Name: Tentacle (1)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11558,8 +11558,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11630,7 +11630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 9143541189980016427}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8050246617639594942
 Animator:
   serializedVersion: 3
@@ -11641,7 +11641,7 @@ Animator:
   m_GameObject: {fileID: 5324889378065687454}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11665,8 +11665,8 @@ GameObject:
   - component: {fileID: 3090840135507346470}
   - component: {fileID: 8050246617675196016}
   m_Layer: 9
-  m_Name: Tentacle (1)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11724,8 +11724,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11796,7 +11796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 9143541190208652005}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8050246617675196016
 Animator:
   serializedVersion: 3
@@ -11807,7 +11807,7 @@ Animator:
   m_GameObject: {fileID: 5324889378365402704}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11831,8 +11831,8 @@ GameObject:
   - component: {fileID: 3090840135236612092}
   - component: {fileID: 8050246617945738666}
   m_Layer: 9
-  m_Name: Tentacle (1)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11890,8 +11890,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11962,7 +11962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 9143541190479178047}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8050246617945738666
 Animator:
   serializedVersion: 3
@@ -11973,7 +11973,7 @@ Animator:
   m_GameObject: {fileID: 5324889378631943562}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11997,8 +11997,8 @@ GameObject:
   - component: {fileID: 3421779697449743595}
   - component: {fileID: 7647249188955936445}
   m_Layer: 9
-  m_Name: Tentacle (5)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12056,8 +12056,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12128,7 +12128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8898029294434333224}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7647249188955936445
 Animator:
   serializedVersion: 3
@@ -12139,7 +12139,7 @@ Animator:
   m_GameObject: {fileID: 5511713896122375837}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12163,8 +12163,8 @@ GameObject:
   - component: {fileID: 3421779697179123505}
   - component: {fileID: 7647249189226626407}
   m_Layer: 9
-  m_Name: Tentacle (5)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12222,8 +12222,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12294,7 +12294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8898029294704712178}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7647249189226626407
 Animator:
   serializedVersion: 3
@@ -12305,7 +12305,7 @@ Animator:
   m_GameObject: {fileID: 5511713896388801863}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12329,8 +12329,8 @@ GameObject:
   - component: {fileID: 3421779696950579967}
   - component: {fileID: 7647249189463421097}
   m_Layer: 9
-  m_Name: Tentacle (5)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12388,8 +12388,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12460,7 +12460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8898029294732153916}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7647249189463421097
 Animator:
   serializedVersion: 3
@@ -12471,7 +12471,7 @@ Animator:
   m_GameObject: {fileID: 5511713896889972873}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12525,8 +12525,8 @@ GameObject:
   - component: {fileID: 3371581389129009867}
   - component: {fileID: 7752565740307490973}
   m_Layer: 9
-  m_Name: Tentacle (5)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12584,8 +12584,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12656,7 +12656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8848165438970907656}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7752565740307490973
 Animator:
   serializedVersion: 3
@@ -12667,7 +12667,7 @@ Animator:
   m_GameObject: {fileID: 5605665968292208829}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12691,8 +12691,8 @@ GameObject:
   - component: {fileID: 3371581388621540575}
   - component: {fileID: 7752565740806639241}
   m_Layer: 9
-  m_Name: Tentacle (5)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12750,8 +12750,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12822,7 +12822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8848165439277066780}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7752565740806639241
 Animator:
   serializedVersion: 3
@@ -12833,7 +12833,7 @@ Animator:
   m_GameObject: {fileID: 5605665969068115625}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12857,8 +12857,8 @@ GameObject:
   - component: {fileID: 3371581388325757201}
   - component: {fileID: 7752565741110936391}
   m_Layer: 9
-  m_Name: Tentacle (5)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12916,8 +12916,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12988,7 +12988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 8848165439773878226}
-  powerType: 0
+  powerType: 1
 --- !u!95 &7752565741110936391
 Animator:
   serializedVersion: 3
@@ -12999,7 +12999,7 @@ Animator:
   m_GameObject: {fileID: 5605665969099656039}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13023,8 +13023,8 @@ GameObject:
   - component: {fileID: 3978664976969335551}
   - component: {fileID: 8244939354409394345}
   m_Layer: 9
-  m_Name: Tentacle (7)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13082,8 +13082,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13154,7 +13154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7149378963321521212}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8244939354409394345
 Animator:
   serializedVersion: 3
@@ -13165,7 +13165,7 @@ Animator:
   m_GameObject: {fileID: 6068071220729637001}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13189,8 +13189,8 @@ GameObject:
   - component: {fileID: 3978664976673460017}
   - component: {fileID: 8244939354713533799}
   m_Layer: 9
-  m_Name: Tentacle (7)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13248,8 +13248,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13320,7 +13320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7149378963818498546}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8244939354713533799
 Animator:
   serializedVersion: 3
@@ -13331,7 +13331,7 @@ Animator:
   m_GameObject: {fileID: 6068071220761273671}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13355,8 +13355,8 @@ GameObject:
   - component: {fileID: 3978664976165923109}
   - component: {fileID: 8244939355212614515}
   m_Layer: 9
-  m_Name: Tentacle (7)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13414,8 +13414,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13486,7 +13486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7149378964124725222}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8244939355212614515
 Animator:
   serializedVersion: 3
@@ -13497,7 +13497,7 @@ Animator:
   m_GameObject: {fileID: 6068071221537243987}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13521,8 +13521,8 @@ GameObject:
   - component: {fileID: 4027180780179773223}
   - component: {fileID: 8268483067243083121}
   m_Layer: 9
-  m_Name: Tentacle (16)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13580,8 +13580,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13652,7 +13652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7197833486462407140}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8268483067243083121
 Animator:
   serializedVersion: 3
@@ -13663,7 +13663,7 @@ Animator:
   m_GameObject: {fileID: 6116587043795680593}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13687,8 +13687,8 @@ GameObject:
   - component: {fileID: 4027180779909332221}
   - component: {fileID: 8268483067513462443}
   m_Layer: 9
-  m_Name: Tentacle (16)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13746,8 +13746,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13818,7 +13818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7197833486733097534}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8268483067513462443
 Animator:
   serializedVersion: 3
@@ -13829,7 +13829,7 @@ Animator:
   m_GameObject: {fileID: 6116587044061927051}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13853,8 +13853,8 @@ GameObject:
   - component: {fileID: 4027180779605193011}
   - component: {fileID: 8268483067809338213}
   m_Layer: 9
-  m_Name: Tentacle (16)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13912,8 +13912,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13984,7 +13984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7197833487238330352}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8268483067809338213
 Animator:
   serializedVersion: 3
@@ -13995,7 +13995,7 @@ Animator:
   m_GameObject: {fileID: 6116587044101823301}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14049,8 +14049,8 @@ GameObject:
   - component: {fileID: 4112725419084428139}
   - component: {fileID: 8957575983238566205}
   m_Layer: 9
-  m_Name: Tentacle (19)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14108,8 +14108,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14180,7 +14180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7859881981417010600}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8957575983238566205
 Animator:
   serializedVersion: 3
@@ -14191,7 +14191,7 @@ Animator:
   m_GameObject: {fileID: 6490326897353349405}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14215,8 +14215,8 @@ GameObject:
   - component: {fileID: 4112725418583031461}
   - component: {fileID: 8957575983748226291}
   m_Layer: 9
-  m_Name: Tentacle (19)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14274,8 +14274,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14346,7 +14346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7859881981716854886}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8957575983748226291
 Animator:
   serializedVersion: 3
@@ -14357,7 +14357,7 @@ Animator:
   m_GameObject: {fileID: 6490326897582118099}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14381,8 +14381,8 @@ GameObject:
   - component: {fileID: 4112725418276870321}
   - component: {fileID: 8957575984046062311}
   m_Layer: 9
-  m_Name: Tentacle (19)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14440,8 +14440,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14512,7 +14512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7859881982224326258}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8957575984046062311
 Animator:
   serializedVersion: 3
@@ -14523,7 +14523,7 @@ Animator:
   m_GameObject: {fileID: 6490326898156712647}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14547,8 +14547,8 @@ GameObject:
   - component: {fileID: 4163236638571384845}
   - component: {fileID: 8978541263755031131}
   m_Layer: 9
-  m_Name: Tentacle (9)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14606,8 +14606,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14678,7 +14678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7910138801376581326}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8978541263755031131
 Animator:
   serializedVersion: 3
@@ -14689,7 +14689,7 @@ Animator:
   m_GameObject: {fileID: 6541436390795098747}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14713,8 +14713,8 @@ GameObject:
   - component: {fileID: 4163236637862589977}
   - component: {fileID: 8978541264455504975}
   m_Layer: 9
-  m_Name: Tentacle (9)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14772,8 +14772,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14844,7 +14844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7910138802018283738}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8978541264455504975
 Animator:
   serializedVersion: 3
@@ -14855,7 +14855,7 @@ Animator:
   m_GameObject: {fileID: 6541436391235460207}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -14879,8 +14879,8 @@ GameObject:
   - component: {fileID: 4163236637764205527}
   - component: {fileID: 8978541264562411905}
   m_Layer: 9
-  m_Name: Tentacle (9)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14938,8 +14938,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15010,7 +15010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7910138802184011028}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8978541264562411905
 Animator:
   serializedVersion: 3
@@ -15021,7 +15021,7 @@ Animator:
   m_GameObject: {fileID: 6541436391598084513}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15045,8 +15045,8 @@ GameObject:
   - component: {fileID: 4554742990699546913}
   - component: {fileID: 8820674260581657463}
   m_Layer: 9
-  m_Name: Tentacle (25)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15104,8 +15104,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15176,7 +15176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7725096543622877154}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8820674260581657463
 Animator:
   serializedVersion: 3
@@ -15187,7 +15187,7 @@ Animator:
   m_GameObject: {fileID: 6644114060714386263}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15211,8 +15211,8 @@ GameObject:
   - component: {fileID: 4554742990326230837}
   - component: {fileID: 8820674260946521443}
   m_Layer: 9
-  m_Name: Tentacle (25)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15270,8 +15270,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15342,7 +15342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7725096544063318518}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8820674260946521443
 Animator:
   serializedVersion: 3
@@ -15353,7 +15353,7 @@ Animator:
   m_GameObject: {fileID: 6644114061356139843}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15377,8 +15377,8 @@ GameObject:
   - component: {fileID: 4554742989896491771}
   - component: {fileID: 8820674261384773805}
   m_Layer: 9
-  m_Name: Tentacle (25)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15436,8 +15436,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15508,7 +15508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 7725096544426173496}
-  powerType: 0
+  powerType: 1
 --- !u!95 &8820674261384773805
 Animator:
   serializedVersion: 3
@@ -15519,7 +15519,7 @@ Animator:
   m_GameObject: {fileID: 6644114061521635469}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15543,8 +15543,8 @@ GameObject:
   - component: {fileID: 213634320072607438}
   - component: {fileID: 5163972184405501080}
   m_Layer: 9
-  m_Name: Tentacle (23)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15602,8 +15602,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15674,7 +15674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 6266274780792946701}
-  powerType: 0
+  powerType: 1
 --- !u!95 &5163972184405501080
 Animator:
   serializedVersion: 3
@@ -15685,7 +15685,7 @@ Animator:
   m_GameObject: {fileID: 7059369735390325944}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15709,8 +15709,8 @@ GameObject:
   - component: {fileID: 213634319567145728}
   - component: {fileID: 5163972184902707542}
   m_Layer: 9
-  m_Name: Tentacle (23)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15768,8 +15768,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15840,7 +15840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 6266274781096857027}
-  powerType: 0
+  powerType: 1
 --- !u!95 &5163972184902707542
 Animator:
   serializedVersion: 3
@@ -15851,7 +15851,7 @@ Animator:
   m_GameObject: {fileID: 7059369735631544694}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -15875,8 +15875,8 @@ GameObject:
   - component: {fileID: 213634319296635098}
   - component: {fileID: 5163972185173017228}
   m_Layer: 9
-  m_Name: Tentacle (23)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15934,8 +15934,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16006,7 +16006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 6266274781367608857}
-  powerType: 0
+  powerType: 1
 --- !u!95 &5163972185173017228
 Animator:
   serializedVersion: 3
@@ -16017,7 +16017,7 @@ Animator:
   m_GameObject: {fileID: 7059369735897860780}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16050,7 +16050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7140683007115650057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.24, y: -3.29, z: 0}
+  m_LocalPosition: {x: -1.24, y: -2.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7140683007605091794}
@@ -16080,7 +16080,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7140683007316588613}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.39, z: 0}
+  m_LocalPosition: {x: -0.84, y: 3.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5538783073412672762}
@@ -16111,7 +16111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7140683007399637934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.24, y: 2.48, z: 0}
+  m_LocalPosition: {x: -1.24, y: 2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7140683007605091794}
@@ -16144,7 +16144,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7140683007605091795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.02, y: 0.04, z: 0}
+  m_LocalPosition: {x: 9.35, y: 0.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7140683007399637929}
@@ -16199,8 +16199,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1188667649
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2411438766041118242, guid: 553b9a489be70524b8f0a4dc9e738dd7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -16307,12 +16307,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0c65603694a9b40adc0e53738658f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxFill: 100
+  maxFill: 500
   fillChangeSmoothness: 1
   fillChangeRate: 0.1
-  fillGainAmount: 1
+  fillGainAmount: 15
   fillGainRate: 0.5
   area: 1
+  center: {fileID: 0}
   minWaitBetweenAttacks: 3
   maxWaitBetweenAttacks: 5
   spawnsParent: {fileID: 1324689912121377747}
@@ -16322,7 +16323,7 @@ MonoBehaviour:
   maxStomps: 6
   leftHandSpawnOrigin: {fileID: 7140683007115650056}
   rightHandSpawnOrigin: {fileID: 7140683007399637929}
-  projectilePrefab: {fileID: 6468363268342907023, guid: 617230aa05922c349a0dbdc63f8944e5, type: 3}
+  projectilePrefab: {fileID: 6468363268342907023, guid: 12194557d8c4b75488ef9bfdf6cf96a4, type: 3}
   projectileVelocity: {x: 1.5, y: 0}
   projectileSpawnInterval: 1
   propAngularVelocity: -20
@@ -16342,7 +16343,7 @@ MonoBehaviour:
   propQuantity: 7
   minWaves: 3
   maxWaves: 5
-  tentaclePrefab: {fileID: 8260986387285543116, guid: 67b669d847d9e694b966d61669310bf9, type: 3}
+  tentaclePrefab: {fileID: 8260986387285543116, guid: 0b9c1e4dcb2944041917dc53a6cf93b5, type: 3}
   tentacleSpawnInterval: 1
   minTentacles: 3
   maxTentacles: 5
@@ -16362,8 +16363,8 @@ GameObject:
   - component: {fileID: 441409855233094510}
   - component: {fileID: 4862996937495286072}
   m_Layer: 9
-  m_Name: Tentacle (11)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16421,8 +16422,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16493,7 +16494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5917887218044892589}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4862996937495286072
 Animator:
   serializedVersion: 3
@@ -16504,7 +16505,7 @@ Animator:
   m_GameObject: {fileID: 7287145236266064152}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16528,8 +16529,8 @@ GameObject:
   - component: {fileID: 441409854801106298}
   - component: {fileID: 4862996937935730476}
   m_Layer: 9
-  m_Name: Tentacle (11)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16587,8 +16588,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16659,7 +16660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5917887218409755577}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4862996937935730476
 Animator:
   serializedVersion: 3
@@ -16670,7 +16671,7 @@ Animator:
   m_GameObject: {fileID: 7287145236966489868}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16694,8 +16695,8 @@ GameObject:
   - component: {fileID: 441409854429829300}
   - component: {fileID: 4862996938298751714}
   m_Layer: 9
-  m_Name: Tentacle (11)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16753,8 +16754,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16825,7 +16826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5917887218847850103}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4862996938298751714
 Animator:
   serializedVersion: 3
@@ -16836,7 +16837,7 @@ Animator:
   m_GameObject: {fileID: 7287145237073523394}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -16869,7 +16870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7309472202150866812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.32, z: 0}
+  m_LocalPosition: {x: -0.84, y: -4.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5538783073582588212}
@@ -16900,7 +16901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7309472202426595134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.24, z: 0}
+  m_LocalPosition: {x: -0.84, y: -4.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5538783073853098734}
@@ -16922,8 +16923,8 @@ GameObject:
   - component: {fileID: 427728455681737230}
   - component: {fileID: 4662209523078062168}
   m_Layer: 9
-  m_Name: Tentacle (8)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16981,8 +16982,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17053,7 +17054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5903977481401599181}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4662209523078062168
 Animator:
   serializedVersion: 3
@@ -17064,7 +17065,7 @@ Animator:
   m_GameObject: {fileID: 7417016083978872952}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17088,8 +17089,8 @@ GameObject:
   - component: {fileID: 427728455411395028}
   - component: {fileID: 4662209523348474754}
   m_Layer: 9
-  m_Name: Tentacle (8)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17147,8 +17148,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17219,7 +17220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5903977481672257303}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4662209523348474754
 Animator:
   serializedVersion: 3
@@ -17230,7 +17231,7 @@ Animator:
   m_GameObject: {fileID: 7417016084245021602}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17254,8 +17255,8 @@ GameObject:
   - component: {fileID: 427728455249699866}
   - component: {fileID: 4662209523518424652}
   m_Layer: 9
-  m_Name: Tentacle (8)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17313,8 +17314,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17385,7 +17386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5903977481766544089}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4662209523518424652
 Animator:
   serializedVersion: 3
@@ -17396,7 +17397,7 @@ Animator:
   m_GameObject: {fileID: 7417016084679347820}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17420,8 +17421,8 @@ GameObject:
   - component: {fileID: 307244956402329888}
   - component: {fileID: 4692587771739130742}
   m_Layer: 9
-  m_Name: Tentacle (3)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17479,8 +17480,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17551,7 +17552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5783520593194364899}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4692587771739130742
 Animator:
   serializedVersion: 3
@@ -17562,7 +17563,7 @@ Animator:
   m_GameObject: {fileID: 7440682980226614102}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17586,8 +17587,8 @@ GameObject:
   - component: {fileID: 307244955961954100}
   - component: {fileID: 4692587772171185506}
   m_Layer: 9
-  m_Name: Tentacle (3)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17645,8 +17646,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17717,7 +17718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5783520593567615479}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4692587772171185506
 Animator:
   serializedVersion: 3
@@ -17728,7 +17729,7 @@ Animator:
   m_GameObject: {fileID: 7440682980935427394}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17752,8 +17753,8 @@ GameObject:
   - component: {fileID: 307244955595162362}
   - component: {fileID: 4692587772546490540}
   m_Layer: 9
-  m_Name: Tentacle (3)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17811,8 +17812,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17883,7 +17884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5783520594001806393}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4692587772546490540
 Animator:
   serializedVersion: 3
@@ -17894,7 +17895,7 @@ Animator:
   m_GameObject: {fileID: 7440682981029587084}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17918,8 +17919,8 @@ GameObject:
   - component: {fileID: 338924430269398660}
   - component: {fileID: 4749327172539702482}
   m_Layer: 9
-  m_Name: Tentacle (17)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17977,8 +17978,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18049,7 +18050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5815454470574520391}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4749327172539702482
 Animator:
   serializedVersion: 3
@@ -18060,7 +18061,7 @@ Animator:
   m_GameObject: {fileID: 7472890075710182642}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18084,8 +18085,8 @@ GameObject:
   - component: {fileID: 338924429493409936}
   - component: {fileID: 4749327173307235014}
   m_Layer: 9
-  m_Name: Tentacle (17)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18143,8 +18144,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18215,7 +18216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5815454471149166163}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4749327173307235014
 Animator:
   serializedVersion: 3
@@ -18226,7 +18227,7 @@ Animator:
   m_GameObject: {fileID: 7472890076217733862}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -18250,8 +18251,8 @@ GameObject:
   - component: {fileID: 338924429462164830}
   - component: {fileID: 4749327173346998024}
   m_Layer: 9
-  m_Name: Tentacle (17)
-  m_TagString: Prop
+  m_Name: Fork
+  m_TagString: Tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18309,8 +18310,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 8612813309196467661, guid: 002fecd9e97fbc547a0d7acd4a7baef2, type: 3}
+  m_SortingOrder: -18
+  m_Sprite: {fileID: 2954231875222550600, guid: cb3435cad6183b24abc777c0069a7063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18381,7 +18382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rBody: {fileID: 5815454471382029213}
-  powerType: 0
+  powerType: 1
 --- !u!95 &4749327173346998024
 Animator:
   serializedVersion: 3
@@ -18392,7 +18393,7 @@ Animator:
   m_GameObject: {fileID: 7472890076513222440}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2f305c89753f01f4f943a497179d11e1, type: 2}
+  m_Controller: {fileID: 9100000, guid: ddd8e68400f11c84cb7e7a539de3ff1c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -6,7 +6,7 @@ public class Prop : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rBody;
     [SerializeField] Power.Type powerType;
-    private Throwable.Type throwableType = Throwable.Type.Projectile;
+    private Throwable.Type throwableType = Throwable.Type.Prop;
     private bool reflected = false;
 
     void OnEnable()
@@ -37,6 +37,11 @@ public class Prop : MonoBehaviour
     public void SelfDestruct()
     {
         Destroy(this.gameObject);
+    }
+
+    public void SelfDestructAfter(float time)
+    {
+        Invoke(nameof(SelfDestruct), time);
     }
 
     void OnTriggerEnter2D(Collider2D other)

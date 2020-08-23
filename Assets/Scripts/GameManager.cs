@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject pauseMenu;
     public bool isPaused;
     private bool timerEnabled = true;
+    [SerializeField] GameObject endGameScreen;
+    [SerializeField] GameObject tentacles;
+    [SerializeField] TextMeshProUGUI endTimer;
+    [SerializeField] TextMeshProUGUI title;
+
+    public static Action OnVictory;
+    public static Action OnDeath;
 
     public float TimeRemaining
     {
@@ -38,7 +46,9 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
 
         TimeRemaining = crisisDuration;
-        // pauseMenu.SetActive(false);
+        endGameScreen.SetActive(false);
+        pauseMenu.SetActive(false);
+        tentacles.SetActive(false);
     }
 
     void Update()
@@ -65,8 +75,11 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("Game over");
-        // SceneManager.LoadScene(0);
+        timerEnabled = false;
+        endTimer.text = timer.text;
+        tentacles.SetActive(true);
+        title.text = "Voce nao resistiu a crise";
+        endGameScreen.SetActive(true);
     }
 
     public void BackToMenu()
@@ -81,6 +94,10 @@ public class GameManager : MonoBehaviour
 
     private void OvercameCrisis()
     {
-        Debug.Log("Congratulations, you have overcome your crisis");
+        endTimer.text = timer.text;
+        title.text = "Voce resistiu a crise";
+        tentacles.SetActive(false);
+        endGameScreen.SetActive(true);
+        OnVictory?.Invoke();
     }
 }

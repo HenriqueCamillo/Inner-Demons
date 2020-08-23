@@ -10,6 +10,7 @@ public class Boss : MonoBehaviour
     [SerializeField] int fillGainAmount = 1;
     [SerializeField] float fillGainRate = 0.5f;
     [SerializeField] protected Power.Type area;
+    [SerializeField] protected Transform center;
 
     protected Animator _animator;
 
@@ -63,6 +64,7 @@ public class Boss : MonoBehaviour
 
     public void HitGrow()    
     {
+        Debug.Log("HIt");
         NextFill += BossesManager.instance.hitGrowth;
     }
 

@@ -65,7 +65,6 @@ public class PowerGaugeManager : MonoBehaviour
     public void AddGaugeBonus(Power.Type powerType, Throwable.Type bonusType)
     {
         float bonus = bonusType == Throwable.Type.Projectile ? projectileBonus : propBonus;
-
         if (powerType == Power.Type.Body)
             BodyPower += bonus;
         else if (powerType == Power.Type.Mind)
