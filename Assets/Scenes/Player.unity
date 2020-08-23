@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83ad81ef80c6ec4c834192b4388d446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crisisDuration: 0
+  crisisDuration: 90
   timer: {fileID: 37392537}
   pauseMenu: {fileID: 535004287}
   isPaused: 0
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.56
+  m_Intensity: 1
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -2570,6 +2570,14 @@ PrefabInstance:
       propertyPath: boss
       value: 
       objectReference: {fileID: 1919918924}
+    - target: {fileID: 156034287, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.6100346
+      objectReference: {fileID: 0}
+    - target: {fileID: 156034287, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3399308
+      objectReference: {fileID: 0}
     - target: {fileID: 190192582, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: boss
       value: 
@@ -2602,6 +2610,22 @@ PrefabInstance:
       propertyPath: boss
       value: 
       objectReference: {fileID: 1919918924}
+    - target: {fileID: 2319217968997520789, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5699997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2319217968997520789, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.3799996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631854804893786886, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 2631854804893786886, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.51
+      objectReference: {fileID: 0}
     - target: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
