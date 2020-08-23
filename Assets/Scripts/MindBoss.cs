@@ -71,6 +71,7 @@ public class MindBoss : Boss
     [SerializeField] GameObject tentaclePrefab;
     [SerializeField] float tentacleSpawnInterval = 1f;
     [SerializeField] int minTentacles, maxTentacles;
+    [SerializeField] float tentacleOffset;
     private int tentacleLimit, tentacleCounter;
     private int TentacleCounter
     {
@@ -146,7 +147,7 @@ public class MindBoss : Boss
                 Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
             default:
-                Invoke(nameof(StartPropWaves), wait);
+                Invoke(nameof(StartTentacleFrenzy), wait);
                 break;
         }
     }
@@ -164,7 +165,7 @@ public class MindBoss : Boss
     {
         telegraphedCounter = 0;
         telegraphedLimit = Random.Range(minTelegraphed, maxTelegraphed + 1);
-        InvokeRepeating(nameof(SpawnProjectile), 0f, projectileSpawnInterval);
+        InvokeRepeating(nameof(SpawnProjectile), 1f, projectileSpawnInterval);
 
         _animator.Play("Telegraphed Attacks", 4);
         _animator.Play("Attack", 0);
@@ -283,7 +284,7 @@ public class MindBoss : Boss
     private void SpawnTentacle()
     {
         if(BossesManager.instance.player.currrentArea == area)
-            Instantiate(tentaclePrefab, BossesManager.instance.player.transform.position, Quaternion.identity, spawnsParent);
+            Instantiate(tentaclePrefab, BossesManager.instance.player.transform.position + Vector3.down * tentacleOffset, Quaternion.identity, spawnsParent);
         
         TentacleCounter++;
     }
@@ -293,7 +294,7 @@ public class MindBoss : Boss
         tentacleCounter = 0;
         tentacleLimit = Random.Range(minTentacles, maxTentacles + 1);
 
-        InvokeRepeating(nameof(SpawnTentacle), 0f, tentacleSpawnInterval);
+        InvokeRepeating(nameof(SpawnTentacle), 1f, tentacleSpawnInterval);
         _animator.Play("Tentacle Frenzy", 4);
         _animator.Play("Attack", 0);
     }
