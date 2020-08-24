@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     [Header("Shoot")]
     [SerializeField] GameObject projectile;
     [SerializeField] float shootCooldown;
+    [SerializeField] GameObject specialPrefab;
 
 
     [Space(5)]
@@ -114,6 +115,7 @@ public class Player : MonoBehaviour
                 _audio.Stop();
                 _audio.clip = specialAttack;
                 _audio.Play();
+                Instantiate(specialPrefab, this.transform.position, Quaternion.identity);
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Mind);
             }
@@ -122,6 +124,7 @@ public class Player : MonoBehaviour
                 _audio.Stop();
                 _audio.clip = specialAttack;
                 _audio.Play();
+                Instantiate(specialPrefab, this.transform.position, Quaternion.identity);
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Body);
             }
