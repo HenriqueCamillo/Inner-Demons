@@ -8,6 +8,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] string voteUrl = "https://rebrand.ly/innerdemons";
     [SerializeField] string facebookUrl = "https://www.facebook.com/InnerDemonsGame/";
     [SerializeField] string twitterUrl = "https://twitter.com/InnerDemonsGame";
+
+    [SerializeField] Animator cutscene;
+
     public void Play()
     {
         SceneManager.LoadScene(1);
@@ -31,5 +34,13 @@ public class MainMenu : MonoBehaviour
     public void Twitter()
     {
         Application.OpenURL(twitterUrl);
+    }
+
+    private void Update()
+    {
+        if (cutscene.gameObject.activeInHierarchy && Input.GetMouseButton(0))
+        {
+            cutscene.Play("After");
+        }
     }
 }
