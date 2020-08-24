@@ -88,13 +88,21 @@ public class Player : MonoBehaviour
     void OnEnable()
     {
         GameManager.OnVictory += Stop;
-        GameManager.OnDeath   += Stop;
+        GameManager.OnDeath   += Die;
     }
 
     void Stop()
     {
         gameEnded = true;
         CancelInvoke();
+    }
+
+    void Die()
+    {
+        gameEnded = true;
+        CancelInvoke();
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
     }
 
     void Update()
