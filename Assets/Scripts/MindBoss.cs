@@ -111,11 +111,13 @@ public class MindBoss : Boss
     {
         // GameManager.OnDeath   += Swallow;
         GameManager.OnVictory += GoAway;
+        GameManager.OnDeath += Swallow;
     }
 
     private void OnDisable()
     {
         GameManager.OnVictory -= GoAway;
+        GameManager.OnDeath -= Swallow;
     }
 
     private void GoAway()
@@ -125,12 +127,12 @@ public class MindBoss : Boss
         _animator.SetTrigger("GoAway");
     }
 
-    // private void Swallow()
-    // {
-    //     CancelInvoke();
-    //     _animator.Play("Idle", 4);
-    //     _animator.SetTrigger("Swallow");
-    // }
+    private void Swallow()
+    {
+        CancelInvoke();
+        _animator.Play("Idle", 4);
+        // _animator.SetTrigger("Swallow");
+    }
 
     protected override void Start()
     {

@@ -12,17 +12,22 @@ public class Prop : MonoBehaviour
     void OnEnable()
     {
         if (powerType == Power.Type.Mind)
-            PowerGaugeManager.instance.OnMindPowerUsed += SelfDestruct;
+            PowerGaugeManager.instance.OnMindPowerUsed += DisbaleNotDestruct;
         else if (powerType == Power.Type.Body)
-            PowerGaugeManager.instance.OnBodyPowerUsed += SelfDestruct;
+            PowerGaugeManager.instance.OnBodyPowerUsed += DisbaleNotDestruct;
     }
 
     void OnDisable()
     {
         if (powerType == Power.Type.Mind)
-            PowerGaugeManager.instance.OnMindPowerUsed -= SelfDestruct;
+            PowerGaugeManager.instance.OnMindPowerUsed -= DisbaleNotDestruct;
         else if (powerType == Power.Type.Body)
-            PowerGaugeManager.instance.OnBodyPowerUsed -= SelfDestruct;
+            PowerGaugeManager.instance.OnBodyPowerUsed -= DisbaleNotDestruct;
+    }
+
+    void DisbaleNotDestruct()
+    {
+        this.gameObject.SetActive(false);
     }
 
     public void Reflect(float force)
