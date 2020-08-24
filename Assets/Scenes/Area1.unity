@@ -2257,6 +2257,10 @@ PrefabInstance:
       propertyPath: mindDamage
       value: 
       objectReference: {fileID: 8300000, guid: bca689d4690144949a7bd59995850b26, type: 3}
+    - target: {fileID: 689381660744639855, guid: b84d9c5558ae4b74e8a9f24aadcfb347, type: 3}
+      propertyPath: specialAttack
+      value: 
+      objectReference: {fileID: 8300000, guid: a321d7c019eb5ce4f9b7c5279a57782e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b84d9c5558ae4b74e8a9f24aadcfb347, type: 3}
 --- !u!1 &689381661465144908 stripped
@@ -2284,7 +2288,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.02
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2442,7 +2446,7 @@ PrefabInstance:
       objectReference: {fileID: 895954545}
     - target: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 5478725426677889362, guid: 1131e224d77e28c4a8c424599e6b9fe2, type: 3}
       propertyPath: m_LocalPosition.y
