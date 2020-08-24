@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject tentacles;
     [SerializeField] TextMeshProUGUI endTimer;
     [SerializeField] TextMeshProUGUI title;
+    [SerializeField] GameObject fade;
+
 
     public static Action OnVictory;
     public static Action OnDeath;
@@ -94,10 +96,17 @@ public class GameManager : MonoBehaviour
 
     private void OvercameCrisis()
     {
-        endTimer.text = timer.text;
-        title.text = "Voce resistiu a crise";
+        // endTimer.text = timer.text;
+        // title.text = "Voce resistiu a crise";
         tentacles.SetActive(false);
-        endGameScreen.SetActive(true);
+        // endGameScreen.SetActive(true);
         OnVictory?.Invoke();
+        fade.SetActive(true);
+        Invoke(nameof(End), 4f);
+    }
+
+    public void End()
+    {
+        SceneManager.LoadScene(2);
     }
 }

@@ -21,6 +21,11 @@ public class MainMenu : MonoBehaviour
         Application.OpenURL(voteUrl);
     }
 
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void Quit()
     {
         Application.Quit();
@@ -38,7 +43,7 @@ public class MainMenu : MonoBehaviour
 
     private void Update()
     {
-        if (cutscene.gameObject.activeInHierarchy && Input.GetMouseButton(0))
+        if (cutscene && cutscene.gameObject.activeInHierarchy && Input.GetMouseButton(0))
         {
             cutscene.Play("After");
         }
