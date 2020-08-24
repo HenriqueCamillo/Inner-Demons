@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     [Space(5)]
     [Header("Sound")]
     [SerializeField] AudioSource _audio;
-    [SerializeField] AudioClip bodyDamage, mindDamage;
+    [SerializeField] AudioClip bodyDamage, mindDamage, specialAttack;
 
     private bool isUsingPower;
     private bool isInvincible;
@@ -119,11 +119,17 @@ public class Player : MonoBehaviour
         {
             if (!IsInBodyArea && PowerGaugeManager.instance.mindPowerReady)
             {
+                _audio.Stop();
+                _audio.clip = specialAttack;
+                _audio.Play();
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Mind);
             }
             else if (IsInBodyArea && PowerGaugeManager.instance.bodyPowerReady)
             {
+                _audio.Stop();
+                _audio.clip = specialAttack;
+                _audio.Play();
                 IsUsingPower = true;
                 PowerGaugeManager.instance.UsePower(Power.Type.Body);
             }
