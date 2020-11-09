@@ -92,6 +92,12 @@ public class Player : MonoBehaviour
         GameManager.OnDeath   += Die;
     }
 
+    void OnDisable()
+    {
+        GameManager.OnVictory -= Stop;
+        GameManager.OnDeath   -= Die;
+    }
+    
     void Stop()
     {
         gameEnded = true;
